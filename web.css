@@ -23,10 +23,12 @@
     align-items: center;
     justify-content: space-between;
   }
-  .logo a{
-    font-size: 40px;
+  .logo a {
+    font-size: 1%;
     text-decoration: none;
-  }
+    margin-top: 10%;
+}
+
   span{
     color: #f9004d;
   }
