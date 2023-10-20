@@ -1,0 +1,21 @@
+/*-------PRODUCT-------*/
+.product{
+    padding: 100px 0;
+  }
+  .product-top{
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .product-top p {
+    
+    font-family: var(--main-text-font);
+    margin: 0 12px;
+    font-size: 12px;
+  }
+  .product-content-left img{
+    width: 50%;
+  }
+  .product-content-right{
+    width: 50%;
+  }
+  
