@@ -1,9 +1,8 @@
-let list = document.querySelector('.slider .list');
-let items = document.querySelectorAll('.slider .list .item');
+let list = document.querySelector('.slider .lista');
+let items = document.querySelectorAll('.slider .lista .item');
 let dots = document.querySelectorAll('.slider .dots li');
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
-
 let active = 0;
 let lenghItems = items.length - 1;
 
