@@ -1,0 +1,82 @@
+<div class="slider">
+    <div class="list">
+      <div class="item1">
+        <img src="img/banner/banner1.png">
+      </div>
+      <div class="item2">
+        <img src="img/banner/banner2.gif">
+      </div>
+      <div class="item3">
+        <img src="img/banner/banner3.gif">
+      </div>
+      <div class="item4">
+        <img src="img/banner/banner4.png">
+      </div>
+      <div class="item5">
+        <img src="img/banner/banner5.jpg">
+      </div>
+      <div class="item6">
+        <img src="img/banner/banner6.jpg">
+      </div>
+    </div>
+    <!--button prev and next-->
+    <div class="buttons">
+      <button id="prev"><</button>
+      <button id="next">></button>
+    </div>
+    <!--dots-->
+    <ul class="dots">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+   </div>
+   .slider{
+    width: 100vw;
+    position: relative;
+  }
+  .list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+  }
+  .list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+  }
+  .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+  }
+  .dots{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }

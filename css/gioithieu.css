@@ -3,6 +3,7 @@
     margin-top: 2px;
     font-family: 'Karla', sans-serif;
     color: #fff;
+    text-decoration: none;
   }
   body{
     background-image: url(hinhnen.png);
@@ -36,7 +37,7 @@
     font-size: 18px;
   }
   .btn{
-    
+   
     color: #f8f8f8;
     transition: 0.5s;
     font-size: 18px;
@@ -45,7 +46,8 @@
     margin-left: 30px;
   }
   .content h2{
-    font-size: 50px
+    margin-block-start: 10px;
+    font-size: 48px
   }
   .content p{
     margin-left: 50px;
