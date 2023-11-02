@@ -1,5 +1,7 @@
 /*-------PRODUCT-------*/
 *{
+  margin: 0;
+  padding: 0;
 
   box-sizing: border-box;
   font-family: 'Karla', sans-serif;
@@ -153,11 +155,16 @@ cursor: pointer;
     width: 100%;
   }
   .product-content-right{
-    width: 150%;
+    width: 200%;
     padding-left: 20px;
   }  
   .product-content-right-name h1{
     font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  .product-content-right-name p
+  {
+    line-height: 1.5;
   }
   .product-content-right-price{
     margin: 12px 0;
@@ -173,6 +180,7 @@ cursor: pointer;
     border-radius: 0px;
 }
   .product-content-right-button button {
+    
     background-color: #333;
     color: #fff;
     font-size: 12px;
