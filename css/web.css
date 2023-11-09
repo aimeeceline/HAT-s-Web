@@ -69,7 +69,7 @@
     line-height: 25px;
   }
   a{
-    color: #fff;
+    color: #050505;
   }
   .link {
     margin-top: 30px;
@@ -347,4 +347,11 @@ footer span {
 footer a {
   padding: 0;
   text-decoration: none;
+}
+
+.listProduct{
+  display: flex;
+}
+.listProduct h1{
+  font-size: 20px;
 }

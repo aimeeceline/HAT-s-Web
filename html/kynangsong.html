@@ -6,71 +6,50 @@
     <title>Kỹ năng sống - Phát triển cá nhân</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="/css/web.css">
+    <link rel="stylesheet" href="/css/chitietsanpham.css">
+    <script src="/js/data.js"></script>
     <script src="/js/dungchung.js"></script>
 </head>
 <body>
         <script> addHeader()</script>
-          <div class="onmain">
-          <div class="on2main">
-          <div class="main"><a href="/kynangsong/dambighet.html"><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Dám Bị Ghét 1.jpg" alt=""  ></a></div>
-               <div class="unmain">
-                <p>Dám bị ghét</p>
-                <p><b>58.000 đ</b></p>
-              </div>
-              </div>
-          <div class="on2main">
-            <div class="main"><a href="/kynangsong/chientranhtiente.html"><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/chiến tranh tiền tệ 1.jpg" alt=""  ></a></div>
-          
-          <div class="unmain">
-            <p>Chiến tranh tiền tệ</p>
-            <p><b>102.000 đ</b></p>
-          </div> </div>
-         
-          <div class="on2main">
-          <div class="main"> <a href="/kynangsong/nonggian.html"><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/nóng giận 1.jpg" alt=""></a></div>
-          <div class="unmain">
-            <p>Nóng giận là bản năng, Tĩnh Lặng Là Bản Lĩnh  </p>
-            <p><b>62.000 đ</b></p>
-          </div>
-           </div>
-          <div class="on2main">
-            <div class="main"><a href="/kynangsong/dacnhantam.html"><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt=""></a></div>
-            <div class="unmain">
-              <p>Đắc Nhân Tâm</p>
-              <p><b>86.000 đ</b></p>
-            </div>
-          </div>
-          </div>
-          <div class="onmain">
-          <div class="on2main">
-          <div class="main"><a href="/kynangsong/lanhdaotapsu.html"><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/lãnh đạo tập sự 1.jpg" alt=""  ></a></div>
-               <div class="unmain">
-                <p>Lãnh đạo tập sự</p>
-                <p><b>140.000 đ</b></p>
-              </div>
-              </div>
-          <div class="on2main">
-            <div class="main"><a href="/kynangsong/songthucte.html"><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Sống Thực Tế Giữa Đời Thực Dụng 1.jpg" alt=""  ></a></div>
-            <div class="unmain">
-            <p>Sống thực tế giữa đời <br>thực dụng</p>
-            <p><b>98.000 đ</b></p>
-          </div>
-           </div>
-          <div class="on2main">
-          <div class="main"> <a href="/kynangsong/sucmanhcuasutaptrung.html"><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/sức mạnh của sự tập trung 1.jpg"></a></div>
         
-          <div class="unmain">
-            <p>Sức mạnh của sự tập trung</p>
-            <p><b>75.000 đ</b></p>
-          </div></div>
-          <div class="on2main">
-            <div class="main"><a href="/kynangsong/ondinhhaytudo.html"><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/ổn định hay tự do 1.jpg" alt=""></a></div>
+    
+        <div class="listProduct">
+        </div>
+
+        <script> 
+         let products = null;
+          // get datas from file json
+          fetch('/js/data.js')
+              .then(response => response.json())
+              .then(data => {
+                  products = data;
+                  addDataToHTML();
+          })
           
-            <div class="unmain">
-              <p>Ổn định hay tự do</p>
-              <p><b>92.000 đ</b></p>
-            </div></div>
-          </div>
-          <script> addFooter()</script>
+          function addDataToHTML(){
+          let listProductHTML = document.querySelector('.listProduct');
+          // add new datas
+          if(products != null) // if has data
+          {
+              products.forEach(product => {
+                if(product.type =='Kỹ năng sống - Phát triển cá nhân'){
+                  let newProduct = document.createElement('a');
+                  newProduct.href = '/html/productdetailskns.html' + product.id;
+                  newProduct.classList.add('item');
+                  newProduct.innerHTML = `
+                    <img src="${product.image1}">
+                    <h1>${product.name}</h1>
+                    <div class="price">$${product.price}</div>`;
+                  listProductHTML.appendChild(newProduct);
+                }
+  
+              });
+          }
+      }
+      </script>
+    
+        
+        <script> addFooter()</script>
 </body>
 </html>
