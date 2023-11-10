@@ -6,7 +6,8 @@
     <title>Kỹ năng sống - Phát triển cá nhân</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="/css/web.css">
-    <link rel="stylesheet" href="/css/chitietsanpham.css">
+  
+
     <script src="/js/data.js"></script>
     <script src="/js/dungchung.js"></script>
 </head>
@@ -18,36 +19,39 @@
         </div>
 
         <script> 
-         let products = null;
-          // get datas from file json
-          fetch('/js/data.js')
-              .then(response => response.json())
-              .then(data => {
-                  products = data;
-                  addDataToHTML();
-          })
-          
-          function addDataToHTML(){
-          let listProductHTML = document.querySelector('.listProduct');
-          // add new datas
-          if(products != null) // if has data
-          {
-              products.forEach(product => {
-                if(product.type =='Kỹ năng sống - Phát triển cá nhân'){
-                  let newProduct = document.createElement('a');
-                  newProduct.href = '/html/productdetailskns.html' + product.id;
-                  newProduct.classList.add('item');
-                  newProduct.innerHTML = `
-                    <img src="${product.image1}">
-                    <h1>${product.name}</h1>
-                    <div class="price">$${product.price}</div>`;
-                  listProductHTML.appendChild(newProduct);
-                }
-  
-              });
-          }
-      }
-      </script>
+          let products = null;
+           // get datas from file json
+           fetch('/js/data.js')
+               .then(response => response.json())
+               .then(data => {
+                   products = data;
+                   addDataToHTML();
+           })
+           
+           function addDataToHTML(){
+           let listProductHTML = document.querySelector('.listProduct');
+           // add new datas
+           if(products != null) // if has data
+           {
+               products.forEach(product => {
+                 if(product.type =='Kỹ năng sống - Phát triển cá nhân'){
+                   let newProduct = document.createElement('e');
+                   newProduct.href = '/html/productdetailskns.html' + product.id;
+                   newProduct.classList.add('itema');
+                   newProduct.innerHTML = `
+                     <img src="${product.image1}"></img>
+                     <div class="unmain">
+                    <p>${product.name}</p>
+                    <p><b>$${product.price}</b></p>
+                  </div>`;
+                   listProductHTML.appendChild(newProduct);
+                   
+                 }
+   
+               });
+           }
+       }
+       </script>
     
         
         <script> addFooter()</script>

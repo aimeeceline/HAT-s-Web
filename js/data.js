@@ -35,7 +35,7 @@
     {
         "id": 4,
         "type": "Kỹ năng sống - Phát triển cá nhân",
-        "name":"lãnh đạo tập sự",
+        "name":"Lãnh đạo tập sự",
         "price": 200,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/lãnh đạo tập sự 1.jpg",
         "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ lãnh đạo tập sự 2.jpg",
@@ -85,7 +85,7 @@
     {
         "id": 9,
         "type": "Kỹ năng sống - Phát triển cá nhân",
-        "name":"Sức mạnh của sự tập trung 1",
+        "name":"Sức mạnh của sự tập trung",
         "price": 200,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/sức mạnh của sự tập trung 1.jpg",
         "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ sức mạnh của sự tập trung 2.jpg",

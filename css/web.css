@@ -159,12 +159,13 @@ padding-top: 20px;
   background-color: white;
   width: 250px;
   height: 120px;
-  margin-left: 50px;
+
+  padding-top: 10px;
   cursor: pointer;
+  
 }
 .unmain p {
   text-align: center;
-
 }
 .unmain b {
   color: red;
@@ -350,8 +351,20 @@ footer a {
 }
 
 .listProduct{
-  display: flex;
+  background-color:none;
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto; 
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2%;
 }
-.listProduct h1{
-  font-size: 20px;
+.itema img {
+  width: 250px;
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
+
+
