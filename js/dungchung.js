@@ -3,7 +3,7 @@ function addHeader() {
     <div class="container">
     <nav>
       <div class="logo">
-        <a href="#"><img src="/img/banner/logoo.png" alt="Logo" height="120px" width="120px"></a>
+        <a href="/html/index.html"><img src="/img/banner/logoo.png" alt="Logo" height="120px" width="120px"></a>
       </div>
       <ul>
         <li><a href="#">TÁC GIẢ</a></li>

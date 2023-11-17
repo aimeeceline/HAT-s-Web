@@ -7,7 +7,7 @@
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/Chiến tranh tiền tệ 1.jpg",
         "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ Chiến tranh tiền tệ 2.jpg",
         "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ Chiến tranh tiền tệ 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
     },
     {
         "id": 2,
@@ -30,7 +30,7 @@
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/Dám Bị Ghét 1.jpg",
         "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ Dám Bị Ghét 2.jpg",
         "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ Dám Bị Ghét 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
     },
     {
         "id": 4,
@@ -40,7 +40,7 @@
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/lãnh đạo tập sự 1.jpg",
         "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ lãnh đạo tập sự 2.jpg",
         "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ lãnh đạo tập sự 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
     },
     {
         "id": 5,
@@ -50,7 +50,7 @@
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/nhung nguoi 1.jpg",
         "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ nhung nguoi 2.jpg",
         "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ nhung nguoi 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
     },
     {
         "id": 6,
@@ -60,7 +60,7 @@
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/nóng giận 1.jpg",
         "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ nóng giận 2.jpg",
         "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ nóng giận 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
     },
     {
         "id": 7,
@@ -70,7 +70,7 @@
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/ổn định hay tự do 1.jpg",
         "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ ổn định hay tự do 2.jpg",
         "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ ổn định hay tự do 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
     },
     {
         "id": 8,
@@ -80,7 +80,7 @@
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/Sống thực tế giữa đời thực dụng 1.jpg",
         "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ Sống thực tế giữa đời thực dụng 2.jpg",
         "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ Sống thực tế giữa đời thực dụng 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
     },
     {
         "id": 9,
@@ -90,7 +90,7 @@
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/sức mạnh của sự tập trung 1.jpg",
         "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ sức mạnh của sự tập trung 2.jpg",
         "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ sức mạnh của sự tập trung 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
     },
     {
         "id": 10,
@@ -100,36 +100,147 @@
         "image1": "/img/product/Manga – Comic/Chú thuật hồi chiến 1.jpg",
         "image 2": "img/product/Manga – Comic/ Chú thuật hồi chiến 2.jpg",
         "image 3": "img/product/Manga – Comic/ Chú thuật hồi chiến 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
     },
     {
         "id": 11,
         "type": "Manga – Comic",
         "name":"Chuyện kỳ lạ ở tiệm sách cũ Tanabe",
         "price": 200,
-        "image1": "img/product/Manga – Comic/ chuyện lạ 1.jpg",
+        "image1": "/img/product/Manga – Comic/chuyện lạ 1.jpg",
         "image 2": "img/product/Manga – Comic/ chuyện lạ 2.jpg",
         "image 3": "img/product/Manga – Comic/ chuyện lạ 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
     },
     {
         "id": 12,
         "type": "Manga – Comic",
         "name":"Conan",
         "price": 200,
-        "image1": "img/product/Manga – Comic/ conan 1.jpg",
+        "image1": "/img/product/Manga – Comic/conan 1.jpg",
         "image 2": "img/product/Manga – Comic/ conan 2.jpg",
         "image 3": "img/product/Manga – Comic/ conan 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
     },
     {
         "id": 13,
         "type": "Manga – Comic",
         "name":"Doraemon",
         "price": 200,
-        "image1": "img/product/Manga – Comic/ doraemon 1.jpg",
+        "image1": "/img/product/Manga – Comic/doraemon 1.jpg",
         "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
         "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
-        "description": "Expertly rendered by Carl Hansen & Søn, the lounge chair—first introduced in 1951 and enduring ever since—is available in oak or as a combination of oak and walnut, sourced from sustainable forestry. Choose from seat and back upholstery in a selection of leather options or in a custom fabric."
+        "description": "."
+    },
+    {
+        "id": 14,
+        "type": "Manga – Comic",
+        "name":"Kimetsu no Yaiba",
+        "price": 200,
+        "image1": "/img/product/Manga – Comic/KnY 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 15,
+        "type": "Manga – Comic",
+        "name":"One Piece",
+        "price": 200,
+        "image1": "/img/product/Manga – Comic/OP 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 16,
+        "type": "Manga – Comic",
+        "name":"Shin",
+        "price": 200,
+        "image1": "/img/product/Manga – Comic/Shin 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 17,
+        "type": "Manga – Comic",
+        "name":"Spy x Family",
+        "price": 200,
+        "image1": "/img/product/Manga – Comic/SxF 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 18,
+        "type": "Manga – Comic",
+        "name":"Doraemon",
+        "price": 200,
+        "image1": "/img/product/Manga – Comic/SxF 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 19,
+        "type": "Nghệ thuật – Văn hóa",
+        "name":"Doraemon",
+        "price": 200,
+        "image1": "/img/product/Nghệ thuật – Văn hóa/can đảm 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 20,
+        "type": "Nghệ thuật – Văn hóa",
+        "name":"Doraemon",
+        "price": 200,
+        "image1": "/img/product/Nghệ thuật – Văn hóa/đi làm 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 21,
+        "type": "Nghệ thuật – Văn hóa",
+        "name":"Doraemon",
+        "price": 200,
+        "image1": "/img/product/Nghệ thuật – Văn hóa/giận 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 22,
+        "type": "Nghệ thuật – Văn hóa",
+        "name":"Doraemon",
+        "price": 200,
+        "image1": "/img/product/Nghệ thuật – Văn hóa/gieo trồng 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 23,
+        "type": "Nghệ thuật – Văn hóa",
+        "name":"Doraemon",
+        "price": 200,
+        "image1": "/img/product/Nghệ thuật – Văn hóa/hoa sen 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 24,
+        "type": "Nghệ thuật – Văn hóa",
+        "name":"Doraemon",
+        "price": 200,
+        "image1": "/img/product/Nghệ thuật – Văn hóa/Kiếp Nào Ta Cũng Tìm Thấy Nhau 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
     }
+
 ]

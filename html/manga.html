@@ -3,73 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kỹ năng sống - Phát triển cá nhân</title>
+    <title>Manga - Comic</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="/css/web.css">
+
+    <script src="/js/data.js"></script>
     <script src="/js/dungchung.js"></script>
 </head>
 <body>
         <script> addHeader()</script>
-          <div class="onmain">
-          <div class="on2main">
-          <div class="main"><a href="/manga/chuthuathoichien.html"><img src="/img/product/Manga – Comic/Chú thuật hồi chiến 1.jpg" alt=""  ></a></div>
-               <div class="unmain">
-                <p>Chú Thuật Hồi Chiến</p>
-                <p><b>28.000 đ</b></p>
-              </div>
-              </div>
-          <div class="on2main">
-            <div class="main"><a href="/manga/chuyenkila.html"><img src="/img/product/Manga – Comic/chuyện lạ 1.jpg" alt=""  ></a></div>
-          
-          <div class="unmain">
-            <p>Chuyện Kỳ Lạ Ở Tiệm Sách Cũ Tanabe</p>
-            <p><b>144.000 đ</b></p>
-          </div> </div>
-         
-          <div class="on2main">
-          <div class="main"> <a href="/manga/conan.html"><img src="/img/product/Manga – Comic/conan 1.jpg" alt=""></a></div>
-          <div class="unmain">
-            <p>Conan </p>
-            <p><b>20.000 đ</b></p>
-          </div>
-           </div>
-          <div class="on2main">
-            <div class="main"> <a href="/manga/doraemon.html"><img src="/img/product/Manga – Comic/doraemon 1.jpg" alt=""></a></div>
-            <div class="unmain">
-              <p>Nobita Và Vùng Đất Lý Tưởng Trên Bầu Trời</p>
-              <p><b>200.000 đ</b></p>
-            </div>
-          </div>
-          </div>
-          <div class="onmain">
-          <div class="on2main">
-          <div class="main"><a href="/manga/spy.html"><img src="/img/product/Manga – Comic/SxF 1.jpg" alt=""  ></a></div>
-               <div class="unmain">
-                <p>Spy X Family</p>
-                <p><b>23.000 đ</b></p>
-              </div>
-              </div>
-          <div class="on2main">
-            <div class="main"><a href="/manga/thanhguomdietquy.html"><img src="/img/product/Manga – Comic/KnY 1.jpg" alt=""  ></a></div>
-            <div class="unmain">
-            <p>Thanh gươm diệt quỷ</p>
-            <p><b>25.000 đ</b></p>
-          </div>
-           </div>
-          <div class="on2main">
-          <div class="main"> <a href="/manga/onepiece.html"><img src="/img/product/Manga – Comic/OP 1.jpg"></a></div>
-          <div class="unmain">
-            <p> One piece</p>
-            <p><b>27.000 đ</b></p>
-          </div></div>
-          <div class="on2main">
-            <div class="main"><a href="/manga/shin.html"><img src="/img/product/Manga – Comic/Shin 3.jpg" alt=""></a></div>
-          
-            <div class="unmain">
-              <p>Shin - cậu bé bút chì</p>
-              <p><b>40.000 đ</b></p>
-            </div></div>
-          </div>
+        <div class="listProduct">
+        </div>
+        <script> 
+          let products = null;
+           // get datas from file json
+           fetch('/js/data.js')
+               .then(response => response.json())
+               .then(data => {
+                   products = data;
+                   addDataToHTML();
+           })
+           
+           function addDataToHTML(){
+           let listProductHTML = document.querySelector('.listProduct');
+           // add new datas
+           if(products != null) // if has data
+           {
+               products.forEach(product => {
+                 if(product.type =='Manga – Comic'){
+                   let newProduct = document.createElement('e');
+                   newProduct.href = '/html/productdetailskns.html' + product.id;
+                   newProduct.classList.add('itema');
+                   newProduct.innerHTML = `
+                     <img src="${product.image1}"></img>
+                     <div class="unmain">
+                    <p>${product.name}</p>
+                    <p><b>$${product.price}</b></p>
+                  </div>`;
+                   listProductHTML.appendChild(newProduct);
+                   
+                 }
+   
+               });
+           }
+       }
+       </script>
           <script> addFooter()</script>
 </body>
 </html>

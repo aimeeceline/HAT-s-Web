@@ -6,72 +6,48 @@
     <title>Kỹ năng sống - Phát triển cá nhân</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="/css/web.css">
+
+    <script src="/js/data.js"></script>
     <script src="/js/dungchung.js"></script>
 </head>
 <body>
         <script> addHeader()</script>
-          <div class="onmain">
-          <div class="on2main">
-          <div class="main"><a href="#"><img src="/img/product/Tâm lý – Trinh Thám/né 1.jpg" alt=""  ></a></div>
-               <div class="unmain">
-                <p>Rối loạn nhân cách tránh né</p>
-                <p><b>100.000 đ</b></p>
-              </div>
-              </div>
-          <div class="on2main">
-          <div class="main"><a href="#"></a><img src="/img/product/Tâm lý – Trinh Thám/Kiếp sinh 1.jpg" alt=""></div>
-          
-          <div class="unmain">
-            <p>Muôn kiếp nhân sinh</p>
-            <p><b>100.000 đ</b></p>
-          </div> </div>
-         
-          <div class="on2main">
-          <div class="main"> <a href="#"><img src="/img/product/Tâm lý – Trinh Thám/8 vụ án 1.jpg" alt=""></a></div>
-          <div class="unmain">
-            <p>8 Vụ Án Hoàn Hảo </p>
-            <p><b>100.000 đ</b></p>
-          </div>
-           </div>
-          <div class="on2main">
-            <div class="main"><img src="/img/product/Tâm lý – Trinh Thám/Sói cừu 1.jpg" alt=""></div>
-            <div class="unmain">
-              <p>Không phải là sói <br>nhưng cũng đừng là cừu</p>
-              <p><b>100.000 đ</b></p>
-            </div>
-          </div>
-          </div>
-          <div class="onmain">
-          <div class="on2main">
-          <div class="main"><a href="#"><img src="/img/product/Tâm lý – Trinh Thám/thao túng 1.jpg" alt=""  ></a></div>
-               <div class="unmain">
-                <p>Thuật thao túng</p>
-                <p><b>100.000 đ</b></p>
-              </div>
-              </div>
-          <div class="on2main">
-          <div class="main"><a href="#"></a><img src="/img/product/Tâm lý – Trinh Thám/trái phải 1.jpg" alt=""></div>
-          <div class="unmain">
-            <p>Thiên tài bên trái <br> Kẻ điên bên phải</p>
-            
-            <p><b>100.000 đ</b></p>
-          </div>
-           </div>
-          <div class="on2main">
-          <div class="main"> <a href="#"><img src="/img/product/Tâm lý – Trinh Thám/đại dương 1.jpg"></a></div>
-        
-          <div class="unmain">
-            <p>Đám Trẻ Ở Đại Dương Đen</p>
-            <p><b>100.000 đ</b></p>
-          </div></div>
-          <div class="on2main">
-            <div class="main"><a href="#"><img src="/img/product/Tâm lý – Trinh Thám/Một cuốn sách chữa lành 1.jpg" alt=""></a></div>
-          
-            <div class="unmain">
-              <p>Một cuốn sách chữa lành</p>
-              <p><b>100.000 đ</b></p>
-            </div></div>
-          </div>
+        <div class="listProduct">
+        </div>
+        <script> 
+          let products = null;
+           // get datas from file json
+           fetch('/js/data.js')
+               .then(response => response.json())
+               .then(data => {
+                   products = data;
+                   addDataToHTML();
+           })
+           
+           function addDataToHTML(){
+           let listProductHTML = document.querySelector('.listProduct');
+           // add new datas
+           if(products != null) // if has data
+           {
+               products.forEach(product => {
+                 if(product.type =='Manga – Comic'){
+                   let newProduct = document.createElement('e');
+                   newProduct.href = '/html/productdetailskns.html' + product.id;
+                   newProduct.classList.add('itema');
+                   newProduct.innerHTML = `
+                     <img src="${product.image1}"></img>
+                     <div class="unmain">
+                    <p>${product.name}</p>
+                    <p><b>$${product.price}</b></p>
+                  </div>`;
+                   listProductHTML.appendChild(newProduct);
+                   
+                 }
+   
+               });
+           }
+       }
+       </script>
           <script> addFooter()</script>
 </body>
 </html>
