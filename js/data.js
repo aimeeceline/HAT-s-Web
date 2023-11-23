@@ -174,10 +174,10 @@
     },
     {
         "id": 18,
-        "type": "Manga – Comic",
+        "type": "Nghệ thuật – Văn hóa",
         "name":"Doraemon",
         "price": 200,
-        "image1": "/img/product/Manga – Comic/SxF 1.jpg",
+        "image1": "/img/product/Manga – Comic/.jpg",
         "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
         "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
         "description": "."
@@ -228,16 +228,6 @@
         "name":"Doraemon",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/hoa sen 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
-        "description": "."
-    },
-    {
-        "id": 24,
-        "type": "Nghệ thuật – Văn hóa",
-        "name":"Doraemon",
-        "price": 200,
-        "image1": "/img/product/Nghệ thuật – Văn hóa/Kiếp Nào Ta Cũng Tìm Thấy Nhau 1.jpg",
         "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
         "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
         "description": "."

@@ -366,5 +366,21 @@ footer a {
   height: 400px;
   object-fit: cover;
 }
+.listPage{
+  padding:10px;
+  text-align: center;
+  list-style: none;
+}
+.listPage li{
+  background-color: #ffffffBD;
+  padding:20px;
+  display: inline-block;
+  margin:0 10px;
+  cursor: pointer;
+}
+.listPage .active{
+  background-color: #B192EF;
+  color:rgb(76, 10, 10)161;
+}
 
 

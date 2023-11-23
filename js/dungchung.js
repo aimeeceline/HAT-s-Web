@@ -8,15 +8,15 @@ function addHeader() {
       <ul>
         <li><a href="#">TÁC GIẢ</a></li>
         <li class="theloai" ><a href="#">THỂ LOẠI</a>
-          <div class="menuu">
-             <ul >
-                <li><a href="kynangsong.html">Kỹ năng sống - Phát triển cá nhân</a></li>
-                <li><a href="manga.html">Manga – Comic</a></li>
-                <li><a href="nghethuat.html">Nghệ thuật – Văn hóa</a></li>
-                <li><a href="tamly.html">Tâm lý – Trinh Thám</a></li>
-                <li><a href="tieuthuyet.html">Tiểu thuyết  </a></li>
-            </ul>
-          </div>
+        <div class="menuu">
+        <ul>
+            <li><a href="danhmuc.html?type=Kỹ năng sống - Phát triển cá nhân">Kỹ năng sống - Phát triển cá nhân</a></li>
+            <li><a href="danhmuc.html?type=Manga – Comic">Manga – Comic</a></li>
+            <li><a href="danhmuc.html?type=Nghệ thuật – Văn hóa">Nghệ thuật – Văn hóa</a></li>
+            <li><a href="danhmuc.html?type=Tâm lý – Trinh Thám">Tâm lý – Trinh Thám</a></li>
+            <li><a href="danhmuc.html?type=Tiểu thuyết">Tiểu thuyết</a></li>
+        </ul>
+    </div>
         </li>
         <li><a href="#">SÁCH MỚI</a></li>
         <li><a href="#">KHUYẾN MÃI</a></li>
@@ -72,5 +72,36 @@ function addFooter() {
     </footer>`)
 }
 
-         
-  
+    let products = null;
+    // Get data from JSON file
+    fetch('/js/data.js')
+        .then(response => response.json())
+        .then(data => {
+            products = data;
+            addDataToHTML();
+        });
+
+    function addDataToHTML() {
+        let listProductHTML = document.querySelector('.listProduct');
+        const urlParams = new URLSearchParams(window.location.search);
+        const typeParam = urlParams.get('type');
+        if (products !== null && typeParam !== null) {
+            const filteredProducts = products.filter(product => product.type === typeParam);
+
+            filteredProducts.forEach(product => {
+                let newProduct = document.createElement('div');
+                newProduct.href = '/html/productdetail.html' + product.id;
+                newProduct.classList.add('itema');
+                newProduct.innerHTML = `
+                    <img src="${product.image1}"></img>
+                    <div class="unmain">
+                        <p>${product.name}</p>
+                        <p><b>$${product.price}</b></p>
+                    </div>`;
+                listProductHTML.appendChild(newProduct);
+            });
+            
+        }
+        let list = document.querySelectorAll('.listProduct .itema');
+    }
+
