@@ -372,15 +372,14 @@ footer a {
   list-style: none;
 }
 .listPage li{
-  background-color: #ffffffBD;
   padding:20px;
   display: inline-block;
-  margin:0 10px;
+  margin: 20px 10px;
   cursor: pointer;
 }
 .listPage .active{
-  background-color: #B192EF;
-  color:rgb(76, 10, 10)161;
+  background-color: rgb(107, 107, 107);
+  color:rgb(49, 34, 34)161;
 }
 
 

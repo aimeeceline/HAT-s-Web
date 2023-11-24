@@ -40,36 +40,36 @@ function addHeader() {
 }
 function addFooter() {
     document.write(` 
-<section class="contact" id="contact">
-      <h2>Contact Us</h2>
-      <p>Reach out to us for any inquiries or feedback.</p>
-      <div class="row">
-        <div class="col information">
-          <div class="contact-details">
-            <p><i class="fas fa-map-marker-alt"></i> 273 An Dương Vương, Quận 5</p>
-            <p><a href="mailto:tuanron2004@gmail.com"><i class="fas fa-envelope"></i> tuanron2004@gmail.com</a></p>
-            <p><a href="tel:0796553739"><i class="fas fa-phone"></i> (84) 796553739</a></p>
-            <p><i class="fas fa-clock"></i> Monday - Saturday: 9:00 AM - 5:00 PM</p>
-            <p><i class="fas fa-clock"></i> Sunday: Closed</p>
-            <p><i class="fas fa-globe"></i> www.hatbook.com</p>
-          </div>          
-        </div>
+    <section class="contact" id="contact">
+          <h2>Contact Us</h2>
+          <p>Reach out to us for any inquiries or feedback.</p>
+          <div class="row">
+            <div class="col information">
+              <div class="contact-details">
+                <p><i class="fas fa-map-marker-alt"></i> 273 An Dương Vương, Quận 5</p>
+                <p><a href="mailto:tuanron2004@gmail.com"><i class="fas fa-envelope"></i> tuanron2004@gmail.com</a></p>
+                <p><a href="tel:0796553739"><i class="fas fa-phone"></i> (84) 796553739</a></p>
+                <p><i class="fas fa-clock"></i> Monday - Saturday: 9:00 AM - 5:00 PM</p>
+                <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+                <p><i class="fas fa-globe"></i> www.hatbook.com</p>
+              </div>          
+            </div>
+          </div>
+        </section>
+        
       </div>
-    </section>
-    
-  </div>
-  
-  </div>
+      
+      </div>
 
-    <footer>
-      <div>
-        <span>Copyright © 2023 All Rights Reserved</span>
-        <span class="link">
-            <a href="#">Home</a>
-            <a href="#contact">Contact</a>
-        </span>
-      </div>
-    </footer>`)
+        <footer>
+          <div>
+            <span>Copyright © 2023 All Rights Reserved</span>
+            <span class="link">
+                <a href="#">Home</a>
+                <a href="#contact">Contact</a>
+            </span>
+          </div>
+        </footer>`)
 }
 
     let products = null;
@@ -81,27 +81,32 @@ function addFooter() {
             addDataToHTML();
         });
 
-    function addDataToHTML() {
-        let listProductHTML = document.querySelector('.listProduct');
-        const urlParams = new URLSearchParams(window.location.search);
-        const typeParam = urlParams.get('type');
-        if (products !== null && typeParam !== null) {
-            const filteredProducts = products.filter(product => product.type === typeParam);
-
-            filteredProducts.forEach(product => {
-                let newProduct = document.createElement('div');
-                newProduct.href = '/html/productdetail.html' + product.id;
-                newProduct.classList.add('itema');
-                newProduct.innerHTML = `
-                    <img src="${product.image1}"></img>
-                    <div class="unmain">
-                        <p>${product.name}</p>
-                        <p><b>$${product.price}</b></p>
-                    </div>`;
-                listProductHTML.appendChild(newProduct);
-            });
-            
-        }
-        let list = document.querySelectorAll('.listProduct .itema');
-    }
+        function addDataToHTML() {
+          let listProductHTML = document.querySelector('.listProduct');
+          listProductHTML.innerHTML = ''; // Xóa danh sách sản phẩm hiện tại
+      
+          const urlParams = new URLSearchParams(window.location.search);
+          const typeParam = urlParams.get('type');
+          if (products !== null && typeParam !== null) {
+              const filteredProducts = products.filter(product => product.type === typeParam);
+      
+              filteredProducts.forEach(product => {
+                  let newProduct = document.createElement('div');
+                  newProduct.href = '/html/productdetail.html' + product.id;
+                  newProduct.classList.add('itema');
+                  newProduct.innerHTML = `
+                      <img src="${product.image1}"></img>
+                      <div class="unmain">
+                          <p>${product.name}</p>
+                          <p><b>$${product.price}</b></p>
+                      </div>`;
+                  listProductHTML.appendChild(newProduct);
+              });
+              
+              // Cập nhật danh sách sản phẩm mới sau khi đã lọc
+              itemsForPagination = document.querySelectorAll('.itema');
+              loadItem(); // Gọi hàm loadItem() để hiển thị phân trang ban đầu
+          }
+      }
+      
 

@@ -1,12 +1,14 @@
-
 let thisPage = 1;
-let limit = 5;
-let list = document.querySelectorAll('.itema');
+let limit = 8;
+let itemsForPagination = document.querySelectorAll('.itema');
+
+console.log(itemsForPagination);
+console.log(filteredProducts);
 
 function loadItem(){
     let beginGet = limit * (thisPage - 1);
     let endGet = limit * thisPage - 1;
-    list.forEach((itema, key)=>{
+    itemsForPagination.forEach((itema, key)=>{
         if(key >= beginGet && key <= endGet){
             itema.style.display = 'block';
         }else{
@@ -17,7 +19,7 @@ function loadItem(){
 }
 loadItem();
 function listPage(){
-    let count = Math.ceil(list.length / limit);
+    let count = Math.ceil(itemsForPagination.length / limit);
     document.querySelector('.listPage').innerHTML = '';
 
     if(thisPage != 1){
@@ -48,5 +50,4 @@ function changePage(i){
     thisPage = i;
     loadItem();
 }
-console.log(list);
-console.log(filteredProducts);
+

@@ -175,17 +175,7 @@
     {
         "id": 18,
         "type": "Nghệ thuật – Văn hóa",
-        "name":"Doraemon",
-        "price": 200,
-        "image1": "/img/product/Manga – Comic/.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
-        "description": "."
-    },
-    {
-        "id": 19,
-        "type": "Nghệ thuật – Văn hóa",
-        "name":"Doraemon",
+        "name":"Can đảm",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/can đảm 1.jpg",
         "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
@@ -193,9 +183,9 @@
         "description": "."
     },
     {
-        "id": 20,
+        "id": 19,
         "type": "Nghệ thuật – Văn hóa",
-        "name":"Doraemon",
+        "name":"Đi làm hết lòng",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/đi làm 1.jpg",
         "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
@@ -203,9 +193,9 @@
         "description": "."
     },
     {
-        "id": 21,
+        "id": 20,
         "type": "Nghệ thuật – Văn hóa",
-        "name":"Doraemon",
+        "name":"Giận",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/giận 1.jpg",
         "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
@@ -213,9 +203,9 @@
         "description": "."
     },
     {
-        "id": 22,
+        "id": 21,
         "type": "Nghệ thuật – Văn hóa",
-        "name":"Doraemon",
+        "name":"Gieo trồng hạnh phúc",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/gieo trồng 1.jpg",
         "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
@@ -225,9 +215,40 @@
     {
         "id": 23,
         "type": "Nghệ thuật – Văn hóa",
-        "name":"Doraemon",
+        "name":"Từng bước nở hoa sen",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/hoa sen 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 24,
+        "type": "Nghệ thuật – Văn hóa",
+        "name":"Kiếp Nào Ta Cũng Tìm Thấy Nhau",
+        "price": 200,
+        "image1": "/img/product/Nghệ thuật – Văn hóa/Kiếp Nào Ta Cũng Tìm Thấy Nhau 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    },
+    {
+        "id": 25,
+        "type": "Nghệ thuật – Văn hóa",
+        "name":"Nhà Thần Bí",
+        "price": 200,
+        "image1": "/img/product/Nghệ thuật – Văn hóa/nhà thần bí 1.jpg",
+        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
+        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "description": "."
+    }
+    ,
+    {
+        "id": 25,
+        "type": "Nghệ thuật – Văn hóa",
+        "name":"Nhân Duyên Tiền Kiếp",
+        "price": 200,
+        "image1": "/img/product/Nghệ thuật – Văn hóa/Nhân Duyên Tiền Kiếp 1.jpg",
         "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
         "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
         "description": "."
