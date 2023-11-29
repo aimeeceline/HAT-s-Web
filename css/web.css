@@ -69,7 +69,7 @@
     line-height: 25px;
   }
   a{
-    color: #fff;
+    color: #050505;
   }
   .link {
     margin-top: 30px;
@@ -155,16 +155,17 @@ padding-top: 20px;
   
 }
 .unmain {
-  box-shadow: 5px 5px 5px 2px #999999;
+  box-shadow: 5px 5px 5px 2px #b6b2b2;
   background-color: white;
   width: 250px;
   height: 120px;
-  margin-left: 50px;
+
+  padding-top: 10px;
   cursor: pointer;
+  
 }
 .unmain p {
   text-align: center;
-
 }
 .unmain b {
   color: red;
@@ -348,3 +349,37 @@ footer a {
   padding: 0;
   text-decoration: none;
 }
+
+.listProduct{
+  background-color:none;
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto; 
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2%;
+}
+.itema img {
+  width: 250px;
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.listPage{
+  padding:10px;
+  text-align: center;
+  list-style: none;
+}
+.listPage li{
+  padding:20px;
+  display: inline-block;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+.listPage .active{
+  background-color: rgb(107, 107, 107);
+  color:rgb(49, 34, 34)161;
+}
+
+

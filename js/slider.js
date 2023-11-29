@@ -25,7 +25,7 @@ prev.onclick = function(){
     }
     reloadSlider();
 }
-let refreshSlider = setInterval(()=>{next.click()},6000)
+let refreshSlider = setInterval(()=>{next.click()},4000)
 function reloadSlider(){
     let checkLeft = items[active].offsetLeft;
     list.style.left = -checkLeft + 'px';
