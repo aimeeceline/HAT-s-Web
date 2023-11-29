@@ -131,7 +131,7 @@ cursor: pointer;
   .product-top p {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 12px;
-    font-size: 13px;
+    font-size: 16px;
   }
   .product-content{
     display: flex;
