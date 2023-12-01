@@ -166,8 +166,11 @@ padding-top: 20px;
 }
 .unmain p {
   text-align: center;
+  font-size: 130%;
+  padding-bottom: 20px; 
 }
 .unmain b {
+
   color: red;
   
 }
