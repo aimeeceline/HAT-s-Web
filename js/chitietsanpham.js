@@ -34,7 +34,7 @@
         });
 
         detail.querySelector('.infor .name').innerText = thisProduct.name;
-        detail.querySelector('.infor .price').innerText = '$' + thisProduct.price;
+        detail.querySelector('.infor .price').innerText = thisProduct.price + 'đ';
         detail.querySelector('.infor .description').innerText = thisProduct.description;
 
 
@@ -53,7 +53,7 @@
 
         productsToShow.forEach(product => {
             let newProduct = document.createElement('a');
-            newProduct.href = 'productdetail.html?id=' + product.id;
+            newProduct.href = 'chitietsanpham.html?id=' + product.id;
             newProduct.classList.add('itema');
             newProduct.innerHTML = `
                 <img src="${product.image1}"></img>

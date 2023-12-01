@@ -19,13 +19,13 @@ console.log()
       
               filteredProducts.forEach(product => {
                   let newProduct = document.createElement('a');
-                  newProduct.href = 'productdetail.html?id=' + product.id;
+                  newProduct.href = 'chitietsanpham.html?id=' + product.id;
                   newProduct.classList.add('itema');
                   newProduct.innerHTML = `
                       <img src="${product.image1}"></img>
                       <div class="unmain">
                           <p>${product.name}</p>
-                          <p><b>${product.price}</b></p>
+                          <p><b>${product.price}đ</b></p>
                       </div>`;
                   listProductHTML.appendChild(newProduct);
               });

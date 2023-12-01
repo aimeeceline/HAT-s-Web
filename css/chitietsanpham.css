@@ -64,6 +64,15 @@ display: flex;
   background-color: rgb(186, 31, 31);
   color: #fff;
 }
+.othersProduct{
+  padding-top: 50px;
+}
+.othersProduct .listProduct{
+  padding-top: 20px;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2%;
+}
 
 
 
