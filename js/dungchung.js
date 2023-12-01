@@ -10,23 +10,21 @@ function addHeader() {
         <li class="theloai" ><a href="#">THỂ LOẠI</a>
         <div class="menuu">
         <ul>
-            <li><a href="danhmuc.html?type=Kỹ năng sống - Phát triển cá nhân">Kỹ năng sống - Phát triển cá nhân</a></li>
-            <li><a href="danhmuc.html?type=Manga – Comic">Manga – Comic</a></li>
-            <li><a href="danhmuc.html?type=Nghệ thuật – Văn hóa">Nghệ thuật – Văn hóa</a></li>
-            <li><a href="danhmuc.html?type=Tâm lý – Trinh Thám">Tâm lý – Trinh Thám</a></li>
-            <li><a href="danhmuc.html?type=Tiểu thuyết">Tiểu thuyết</a></li>
+            <li><a href="/html/danhmuc.html?type=Kỹ năng sống - Phát triển cá nhân">Kỹ năng sống - Phát triển cá nhân</a></li>
+            <li><a href="/html/danhmuc.html?type=Manga – Comic">Manga – Comic</a></li>
+            <li><a href="/html/danhmuc.html?type=Nghệ thuật – Văn hóa">Nghệ thuật – Văn hóa</a></li>
+            <li><a href="/html/danhmuc.html?type=Tâm lý – Trinh Thám">Tâm lý – Trinh Thám</a></li>
+            <li><a href="/html/danhmuc.html?type=Tiểu thuyết">Tiểu thuyết</a></li>
         </ul>
     </div>
         </li>
         <li><a href="#">SÁCH MỚI</a></li>
         <li><a href="#">KHUYẾN MÃI</a></li>
       </ul>
-      
-
       <div class="box">
         <input type="checkbox" id="check">
         <div class="search-box">
-          <input type="text" placeholder="Type here...">
+          <input type="text" placeholder="Tìm kiếm">
           <label for="check" class="icon">
             <i class="fas fa-search"></i>
           </label>
@@ -56,11 +54,8 @@ function addFooter() {
             </div>
           </div>
         </section>
-        
       </div>
-      
       </div>
-
         <footer>
           <div>
             <span>Copyright © 2023 All Rights Reserved</span>
@@ -72,41 +67,6 @@ function addFooter() {
         </footer>`)
 }
 
-    let products = null;
-    // Get data from JSON file
-    fetch('/js/data.js')
-        .then(response => response.json())
-        .then(data => {
-            products = data;
-            addDataToHTML();
-        });
-
-        function addDataToHTML() {
-          let listProductHTML = document.querySelector('.listProduct');
-          listProductHTML.innerHTML = ''; // Xóa danh sách sản phẩm hiện tại
-      
-          const urlParams = new URLSearchParams(window.location.search);
-          const typeParam = urlParams.get('type');
-          if (products !== null && typeParam !== null) {
-              const filteredProducts = products.filter(product => product.type === typeParam);
-      
-              filteredProducts.forEach(product => {
-                  let newProduct = document.createElement('div');
-                  newProduct.href = '/html/productdetail.html' + product.id;
-                  newProduct.classList.add('itema');
-                  newProduct.innerHTML = `
-                      <img src="${product.image1}"></img>
-                      <div class="unmain">
-                          <p>${product.name}</p>
-                          <p><b>$${product.price}</b></p>
-                      </div>`;
-                  listProductHTML.appendChild(newProduct);
-              });
-              
-              // Cập nhật danh sách sản phẩm mới sau khi đã lọc
-              itemsForPagination = document.querySelectorAll('.itema');
-              loadItem(); // Gọi hàm loadItem() để hiển thị phân trang ban đầu
-          }
-      }
+    
       
 

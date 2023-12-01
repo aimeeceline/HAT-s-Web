@@ -1,87 +1,67 @@
 /*-------PRODUCT-------*/
 *{
-  margin: 0;
-  padding: 0;
-
-  box-sizing: border-box;
-  font-family: 'Karla', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Karla', sans-serif;
 }
 body{
-  color: rgb(229, 44, 44);
+color: rgb(229, 44, 44);
 }
-.product{
-    padding: 50px 0;
-  }
-  .product-top{
-    display: flex;
-    margin-bottom: 30px;
-  }
-  .product-top p {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 12px;
-    font-size: 16px;
-  }
-  .product-content{
-    display: flex;
-
-  }
-  .product-content-left{
-    padding-right: 20px;
-    display: flex;
-  }
-  .product-content-left-bigimg{
-    width: 60%;
-    padding-right: 20px;
-  }
-  .product-content-left-bigimg img {
-    width: 100%;
-  }
-  .product-content-left-smallimg{
-    width: 20%;
-  }
-  .product-content-left-smallimg img {
-    width: 100%;
-  }
-  .product-content-right{
-    width: 200%;
-    padding-left: 20px;
-  }  
-  h1{
-    font-family: Arial, Helvetica, sans-serif;
-  
-  }
-  .product-content-right-name p
-  {
-    line-height: 1.5;
-  }
-  .product-content-right-price{
-    margin: 12px 0;
-    font-size: 25px;
-    font-weight: bold;
-    color: brown;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-.quantity input{
-  border: 1px solid #e6e6e6;
-    max-width: 100%;
-    padding: 8px 10px;
-    border-radius: 0px;
+.main{
+display: flex;
 }
-  .product-content-right-button button {
-    
-    background-color: #333;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    cursor: pointer;
-    height: 50px;
-    border: 1px solid #ccc;
-   width: 185px;
-  }
+.image{
+  width: 60%;
+  padding-right: 20px;
+  display: flex;
+}
+.big-image{
+  width: 60%;
+  padding-right: 20px;
+}
+.big-image img{
+  width: 100%;
+}
+.small-image{
+  width: 40%;
+  cursor: pointer;
+}
+.small-image img{
+  width: 50%;
+}
+.infor{
+  width: 40%;
+  padding-left: 20px;
+}  
+.name
+{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+.price{
+  margin: 12px 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: brown;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons button {
+  width: 150px;
+  height: 40px;
+  color: black;
+  font-size: 12px;
+  border-radius: 8px;
+  display: block;
+  margin: 20px 0 12px;
+  cursor: pointer;
+}
+.buttons button:hover{
+  background-color: black;
+  color: #fff;
+}
 
 
-  
+
+
