@@ -29,6 +29,7 @@ display: flex;
 }
 .small-image img{
   width: 50%;
+  height: 30%;
 }
 .infor{
   width: 40%;
@@ -48,17 +49,19 @@ display: flex;
 }
 
 .buttons button {
-  width: 150px;
+  width: 200px;
   height: 40px;
-  color: black;
-  font-size: 12px;
+  color:rgb(152, 50, 50);
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid rgb(152, 50, 50);
   border-radius: 8px;
   display: block;
   margin: 20px 0 12px;
   cursor: pointer;
 }
 .buttons button:hover{
-  background-color: black;
+  background-color: rgb(186, 31, 31);
   color: #fff;
 }
 
