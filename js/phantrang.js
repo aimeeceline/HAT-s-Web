@@ -1,5 +1,5 @@
 let thisPage = 1;
-let limit = 8;
+let limit = 6;
 let itemsForPagination = document.querySelectorAll('.itema');
 
 console.log(itemsForPagination);

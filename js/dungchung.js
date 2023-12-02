@@ -10,23 +10,21 @@ function addHeader() {
         <li class="theloai" ><a href="#">THỂ LOẠI</a>
         <div class="menuu">
         <ul>
-            <li><a href="danhmuc.html?type=Kỹ năng sống - Phát triển cá nhân">Kỹ năng sống - Phát triển cá nhân</a></li>
-            <li><a href="danhmuc.html?type=Manga – Comic">Manga – Comic</a></li>
-            <li><a href="danhmuc.html?type=Nghệ thuật – Văn hóa">Nghệ thuật – Văn hóa</a></li>
-            <li><a href="danhmuc.html?type=Tâm lý – Trinh Thám">Tâm lý – Trinh Thám</a></li>
-            <li><a href="danhmuc.html?type=Tiểu thuyết">Tiểu thuyết</a></li>
+            <li><a href="/html/danhmuc.html?type=Kỹ năng sống - Phát triển cá nhân">Kỹ năng sống - Phát triển cá nhân</a></li>
+            <li><a href="/html/danhmuc.html?type=Manga – Comic">Manga – Comic</a></li>
+            <li><a href="/html/danhmuc.html?type=Nghệ thuật – Văn hóa">Nghệ thuật – Văn hóa</a></li>
+            <li><a href="/html/danhmuc.html?type=Tâm lý – Trinh Thám">Tâm lý – Trinh Thám</a></li>
+            <li><a href="/html/danhmuc.html?type=Tiểu thuyết">Tiểu thuyết</a></li>
         </ul>
     </div>
         </li>
         <li><a href="#">SÁCH MỚI</a></li>
         <li><a href="#">KHUYẾN MÃI</a></li>
       </ul>
-      
-
       <div class="box">
         <input type="checkbox" id="check">
         <div class="search-box">
-          <input type="text" placeholder="Type here...">
+          <input type="text" placeholder="Tìm kiếm">
           <label for="check" class="icon">
             <i class="fas fa-search"></i>
           </label>
@@ -38,6 +36,7 @@ function addHeader() {
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXRJREFUSEvt1r9LVlEcx/GX4Kbg6iRSkG4m4pZRQ2OCm4Tg/9AgKE6Co+i/ENLgEgRBS5CUm4I4BWKSe+DSmsSR88jj7V7v90TwODxnO+d8zud9vz+4fAf0aA30iOtfwIOYxkz+6CMc43dJECXgpF3FCkYqkEtsYCcKLwHvYqnFeBuvI/Ao+BXeZsOLbP4l759hC2N5/wKf2uBR8Hc8QErpI/ysGI/iDEM4wNz/AD/MpslrHZsNpul8DVe5B37dBY9E/ARfs8lLfGgwnMf7fDeL1O2NKwJONfycHZ5jv8Etqrt+XgUP4yTXs61MJffnmMJN+qvg1BSdbi0xjmifdpXsr4i70/UGPzCO5ezcOasD1em6z26VqRpxXZ2itSt6e6/Bkfo1aRqzFYm4Dy7JQD/VN7/bfnNF/1LRBrv/zTWJb9FwCnUTOO28qRsE3mGh0LRNvofFblEdOJ2lMeZxzaDQBqjep/nrEB+rF5HRpxQW0vcM/AcLDWsfXKwkoAAAAABJRU5ErkJggg=="/>
             <span class="quantity">0</span>
         </a>
+        <a href="/html/giohang.html" class="btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXRJREFUSEvt1r9LVlEcx/GX4Kbg6iRSkG4m4pZRQ2OCm4Tg/9AgKE6Co+i/ENLgEgRBS5CUm4I4BWKSe+DSmsSR88jj7V7v90TwODxnO+d8zud9vz+4fAf0aA30iOtfwIOYxkz+6CMc43dJECXgpF3FCkYqkEtsYCcKLwHvYqnFeBuvI/Ao+BXeZsOLbP4l759hC2N5/wKf2uBR8Hc8QErpI/ysGI/iDEM4wNz/AD/MpslrHZsNpul8DVe5B37dBY9E/ARfs8lLfGgwnMf7fDeL1O2NKwJONfycHZ5jv8Etqrt+XgUP4yTXs61MJffnmMJN+qvg1BSdbi0xjmifdpXsr4i70/UGPzCO5ezcOasD1em6z26VqRpxXZ2itSt6e6/Bkfo1aRqzFYm4Dy7JQD/VN7/bfnNF/1LRBrv/zTWJb9FwCnUTOO28qRsE3mGh0LRNvofFblEdOJ2lMeZxzaDQBqjep/nrEB+rF5HRpxQW0vcM/AcLDWsfXKwkoAAAAABJRU5ErkJggg=="/></a>
       </div>
     </nav>`)
 }
@@ -59,11 +58,8 @@ function addFooter() {
             </div>
           </div>
         </section>
-        
       </div>
-      
       </div>
-
         <footer>
           <div>
             <span>Copyright © 2023 All Rights Reserved</span>
@@ -112,5 +108,6 @@ function addFooter() {
               loadItem(); // Gọi hàm loadItem() để hiển thị phân trang ban đầu
           }
       }
+    
       
 

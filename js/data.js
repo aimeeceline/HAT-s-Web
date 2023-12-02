@@ -3,11 +3,14 @@
         "id": 1,
         "type": "Kỹ năng sống - Phát triển cá nhân",
         "name":"Chiến tranh tiền tệ",
-        "price": 200,
+        "price": "200.000",
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/Chiến tranh tiền tệ 1.jpg",
         "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Chiến tranh tiền tệ 2.jpg",
         "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Chiến tranh tiền tệ 3.jpg",
         "description": "."
+        ,"image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/Chiến tranh tiền tệ 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/Chiến tranh tiền tệ 3.jpg",
+        "description": "Tác giả: Song Hong Bing, Nhà xuất bản: Lao Động"
     },
     {
         "id": 2,
@@ -17,6 +20,8 @@
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg",
         "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Đắc Nhân Tâm 2.jpg",
         "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Đắc Nhân Tâm 3.jpg",
+        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 3.jpg",
         "description": "."
     },
     {
@@ -27,6 +32,8 @@
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/Dám Bị Ghét 1.jpg",
         "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Dám Bị Ghét 2.jpg",
         "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Dám Bị Ghét 3.jpg",
+        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/Dám Bị Ghét 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/Dám Bị Ghét 3.jpg",
         "description": "."
     },
     {
@@ -35,9 +42,7 @@
         "name":"Lãnh đạo tập sự",
         "price": 200,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/lãnh đạo tập sự 1.jpg",
-        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/ lãnh đạo tập sự 2.jpg",
-        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/ lãnh đạo tập sự 3.jpg",
-        "description": "."
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/lãnh đạo tập sự 3.jpg",
     },
     {
         "id": 5,
@@ -45,8 +50,8 @@
         "name":"Những người khốn khổ",
         "price": 200,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/nhung nguoi 1.jpg",
-        "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ nhung nguoi 2.jpg",
-        "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ nhung nguoi 3.jpg",
+        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/nhung nguoi 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/nhung nguoi 3.jpg",
         "description": "."
     },
     {
@@ -55,8 +60,8 @@
         "name":"Nóng giận là bản năng, tĩnh lặng là bản lĩnh",
         "price": 200,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/nóng giận 1.jpg",
-        "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ nóng giận 2.jpg",
-        "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ nóng giận 3.jpg",
+        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/nóng giận 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/nóng giận 3.jpg",
         "description": "."
     },
     {
@@ -65,8 +70,8 @@
         "name":"Ổn định hay tự do",
         "price": 200,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/ổn định hay tự do 1.jpg",
-        "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ ổn định hay tự do 2.jpg",
-        "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ ổn định hay tự do 3.jpg",
+        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/ổn định hay tự do 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/ổn định hay tự do 3.jpg",
         "description": "."
     },
     {
@@ -75,18 +80,18 @@
         "name":"Sống thực tế giữa đời thực dụng",
         "price": 200,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/Sống thực tế giữa đời thực dụng 1.jpg",
-        "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ Sống thực tế giữa đời thực dụng 2.jpg",
-        "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ Sống thực tế giữa đời thực dụng 3.jpg",
+        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/Sống thực tế giữa đời thực dụng 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/Sống thực tế giữa đời thực dụng 3.jpg",
         "description": "."
     },
     {
         "id": 9,
         "type": "Kỹ năng sống - Phát triển cá nhân",
         "name":"Sức mạnh của sự tập trung",
-        "price": 200,
+        "price": 200.000,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/sức mạnh của sự tập trung 1.jpg",
-        "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ sức mạnh của sự tập trung 2.jpg",
-        "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ sức mạnh của sự tập trung 3.jpg",
+        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/sức mạnh của sự tập trung 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/sức mạnh của sự tập trung 3.jpg",
         "description": "."
     },
     {
@@ -95,8 +100,8 @@
         "name":"Chú thuật hồi chiến",
         "price": 200,
         "image1": "/img/product/Manga – Comic/Chú thuật hồi chiến 1.jpg",
-        "image 2": "img/product/Manga – Comic/ Chú thuật hồi chiến 2.jpg",
-        "image 3": "img/product/Manga – Comic/ Chú thuật hồi chiến 3.jpg",
+        "image2": "/img/product/Manga – Comic/Chú thuật hồi chiến 2.jpg",
+        "image3": "/img/product/Manga – Comic/Chú thuật hồi chiến 3.jpg",
         "description": "."
     },
     {
@@ -105,8 +110,8 @@
         "name":"Chuyện kỳ lạ ở tiệm sách cũ Tanabe",
         "price": 200,
         "image1": "/img/product/Manga – Comic/chuyện lạ 1.jpg",
-        "image 2": "img/product/Manga – Comic/ chuyện lạ 2.jpg",
-        "image 3": "img/product/Manga – Comic/ chuyện lạ 3.jpg",
+        "image2": "/img/product/Manga – Comic/chuyện lạ 2.jpg",
+        "image3": "/img/product/Manga – Comic/chuyện lạ 3.jpg",
         "description": "."
     },
     {
@@ -115,8 +120,8 @@
         "name":"Conan",
         "price": 200,
         "image1": "/img/product/Manga – Comic/conan 1.jpg",
-        "image 2": "img/product/Manga – Comic/ conan 2.jpg",
-        "image 3": "img/product/Manga – Comic/ conan 3.jpg",
+        "image2": "/img/product/Manga – Comic/conan 2.jpg",
+        "image3": "/img/product/Manga – Comic/conan 3.jpg",
         "description": "."
     },
     {
@@ -125,8 +130,8 @@
         "name":"Doraemon",
         "price": 200,
         "image1": "/img/product/Manga – Comic/doraemon 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     },
     {
@@ -135,8 +140,8 @@
         "name":"Kimetsu no Yaiba",
         "price": 200,
         "image1": "/img/product/Manga – Comic/KnY 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     },
     {
@@ -145,8 +150,8 @@
         "name":"One Piece",
         "price": 200,
         "image1": "/img/product/Manga – Comic/OP 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     },
     {
@@ -155,8 +160,8 @@
         "name":"Shin",
         "price": 200,
         "image1": "/img/product/Manga – Comic/Shin 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     },
     {
@@ -165,8 +170,8 @@
         "name":"Spy x Family",
         "price": 200,
         "image1": "/img/product/Manga – Comic/SxF 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     },
     {
@@ -175,8 +180,8 @@
         "name":"Can đảm",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/can đảm 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     },
     {
@@ -185,8 +190,8 @@
         "name":"Đi làm hết lòng",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/đi làm 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     },
     {
@@ -195,8 +200,8 @@
         "name":"Giận",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/giận 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     },
     {
@@ -205,8 +210,8 @@
         "name":"Gieo trồng hạnh phúc",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/gieo trồng 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     },
     {
@@ -215,8 +220,8 @@
         "name":"Từng bước nở hoa sen",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/hoa sen 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     },
     {
@@ -225,8 +230,8 @@
         "name":"Kiếp Nào Ta Cũng Tìm Thấy Nhau",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/Kiếp Nào Ta Cũng Tìm Thấy Nhau 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     },
     {
@@ -235,8 +240,8 @@
         "name":"Nhà Thần Bí",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/nhà thần bí 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     }
     ,
@@ -246,8 +251,8 @@
         "name":"Nhân Duyên Tiền Kiếp",
         "price": 200,
         "image1": "/img/product/Nghệ thuật – Văn hóa/Nhân Duyên Tiền Kiếp 1.jpg",
-        "image 2": "img/product/Manga – Comic/ doraemon 2.jpg",
-        "image 3": "img/product/Manga – Comic/ doraemon 3.jpg",
+        "image2": "/img/product/Manga – Comic/doraemon 2.jpg",
+        "image3": "/img/product/Manga – Comic/doraemon 3.jpg",
         "description": "."
     }
 
