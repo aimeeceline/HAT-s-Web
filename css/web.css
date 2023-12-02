@@ -4,6 +4,13 @@
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
   }
+<<<<<<< Updated upstream
+=======
+  body{
+    color: rgb(229, 44, 44);
+  }
+ 
+>>>>>>> Stashed changes
   .container{
     width: 100%;
     height: auto;
@@ -92,6 +99,44 @@
   font-size: 18px;
   cursor: pointer;
 }
+<<<<<<< Updated upstream
+=======
+.notfound
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 6.25rem 0 7.5rem;
+  font-size: 200%;
+}
+
+.onmain{
+  background-color:none;
+  max-width: 1300px;
+  height: 550px;
+  margin: 0 auto; 
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.on2main{
+  width: 350px;
+  height: 500px;
+  background-color: none;
+  flex-direction: column; /* Để nội dung bên trong căn giữa theo chiều dọc */
+  align-items: center; 
+
+}
+.on2main p{
+  font-size: 18px;
+  color:#000;
+text-align: center;
+padding-top: 20px;
+  
+}
+>>>>>>> Stashed changes
 .unmain {
   box-shadow: 5px 5px 5px 2px #b6b2b2;
   width: 250px;
