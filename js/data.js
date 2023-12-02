@@ -5,8 +5,8 @@
         "name":"Chiến tranh tiền tệ",
         "price": 200,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/Chiến tranh tiền tệ 1.jpg",
-        "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ Chiến tranh tiền tệ 2.jpg",
-        "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ Chiến tranh tiền tệ 3.jpg",
+        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Chiến tranh tiền tệ 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Chiến tranh tiền tệ 3.jpg",
         "description": "."
     },
     {
@@ -15,12 +15,9 @@
         "name":"Đắc Nhân Tâm",
         "price": 200,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg",
-        "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ Đắc Nhân Tâm 2.jpg",
-        "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ Đắc Nhân Tâm 3.jpg",
-        "Nhà cung cấp": "CÔNG TY TNHH PHÁT HÀNH S BOOKS",
-        "Hình thức bìa": "Bìa Mềm",
-        "Tác giả": "Dale Carnegie",
-        "Nhà xuất bản": "Văn Học"
+        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Đắc Nhân Tâm 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Đắc Nhân Tâm 3.jpg",
+        "description": "."
     },
     {
         "id": 3,
@@ -28,8 +25,8 @@
         "name":"Dám Bị Ghét",
         "price": 200,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/Dám Bị Ghét 1.jpg",
-        "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ Dám Bị Ghét 2.jpg",
-        "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ Dám Bị Ghét 3.jpg",
+        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Dám Bị Ghét 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/ Dám Bị Ghét 3.jpg",
         "description": "."
     },
     {
@@ -38,8 +35,8 @@
         "name":"Lãnh đạo tập sự",
         "price": 200,
         "image1": "/img/product/Kỹ năng sống - Phát triển cá nhân/lãnh đạo tập sự 1.jpg",
-        "image 2": "img/product/Kỹ năng sống - Phát triển cá nhân/ lãnh đạo tập sự 2.jpg",
-        "image 3": "img/product/Kỹ năng sống - Phát triển cá nhân/ lãnh đạo tập sự 3.jpg",
+        "image2": "/img/product/Kỹ năng sống - Phát triển cá nhân/ lãnh đạo tập sự 2.jpg",
+        "image3": "/img/product/Kỹ năng sống - Phát triển cá nhân/ lãnh đạo tập sự 3.jpg",
         "description": "."
     },
     {
