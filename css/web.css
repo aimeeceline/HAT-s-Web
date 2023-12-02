@@ -4,13 +4,11 @@
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
   }
-<<<<<<< Updated upstream
-=======
+
   body{
     color: rgb(229, 44, 44);
   }
  
->>>>>>> Stashed changes
   .container{
     width: 100%;
     height: auto;
@@ -99,8 +97,7 @@
   font-size: 18px;
   cursor: pointer;
 }
-<<<<<<< Updated upstream
-=======
+
 .notfound
 {
   display: flex;
@@ -136,7 +133,7 @@ text-align: center;
 padding-top: 20px;
   
 }
->>>>>>> Stashed changes
+
 .unmain {
   box-shadow: 5px 5px 5px 2px #b6b2b2;
   width: 250px;
