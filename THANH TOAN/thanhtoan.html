@@ -63,44 +63,30 @@
 		<div class="right">
 			<h3>PHƯƠNG THỨC THANH TOÁN</h3>
 			<form>
-				Accepted Card <br>
-                <div class="selectWrapper">
-                    <select class="selectBox">
-                    <option>Option 1</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                    <option>Option 4</option>
-                  </select>
-                  </div>
-				<img src="image/card1.png" width="100">
-				<img src="image/card2.png" width="50">
-				<br><br>
-
-				Credit card number
-			<input type="text" name="" placeholder="Enter card number">
-				
-				Exp month
-				<input type="text" name="" placeholder="Enter Month">
-				<div id="zip">
-					<label>
-						Exp year
-						<select>
-							<option>Choose Year..</option>
-							<option>2022</option>
-							<option>2023</option>
-							<option>2024</option>
-							<option>2025</option>
-						</select>
-					</label>
-						<label>
-						CVV
-						<input type="number" name="" placeholder="CVV">
-					</label>
-				</div>
+                <input type="radio" id="age1" name="age" value="30">
+  				<label for="age1">LOGO ZALO</label><br>
+  				<input type="radio" id="age2" name="age" value="60">
+  				<label for="age2">LOGO MOMO</label><br>  
+  				<input type="radio" id="age3" name="age" value="100">
+  				<label for="age3">ATM LOGO</label><br>
+				<input type="radio" id="age4" name="age" value="120">
+  				<label for="age3">Thanh toán bằng tiền mặt</label><br>
 			</form>
-			<input type="submit" name="" value="Proceed to Checkout">
 		</div>
-	</div>
+	
 </header>
+<div class="fixed-buttons-container">
+	<div class="back-to-cart">
+		<a href="/user/GIO HANG/giohang.html">
+			<span>
+				<img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/btn_back.svg?q=10354">
+			</span>
+			<span>Quay về giỏ hàng</span>
+		</a>
+	</div>
+	<div class="checkout-button">
+		<input type="submit" name="" value="THANH TOÁN NGAY!!!" class="checkout-btn">
+	</div>
+</div>
 </body>
 </html>
