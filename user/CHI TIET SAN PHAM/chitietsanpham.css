@@ -8,7 +8,7 @@ font-family: 'Karla', sans-serif;
 body{
 color: rgb(229, 44, 44);
 }
-.main{
+.center{
 display: flex;
 }
 .image{
@@ -47,6 +47,9 @@ display: flex;
   color: brown;
   font-family: Arial, Helvetica, sans-serif;
 }
+.description{
+  line-height: 1.5;
+}
 
 .buttons button {
   width: 200px;
@@ -65,7 +68,7 @@ display: flex;
   color: #fff;
 }
 .othersProduct{
-  padding-top: 50px;
+  padding-top: 10px;
 }
 .othersProduct .listProduct{
   padding-top: 20px;
