@@ -9,3 +9,5 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
+function myFunction1() {
+    alert("Bạn đã đăng ký thành công");}
