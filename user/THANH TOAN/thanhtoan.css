@@ -91,3 +91,9 @@ form input[type="text"]{
 .fixed-buttons-container .checkout-button {
   margin-left: auto; /* Dịch chuyển nút THANH TOÁN NGAY về phía bên phải */
 }
+label img{
+  width: 8%;
+}
+#momo{
+  width: 6%;
+}
