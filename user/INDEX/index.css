@@ -98,7 +98,7 @@ h1{
 }
 h2 {
   margin: 20px 0 20px;
-  text-align: center;
+ 
 }
 .show{
   display: flex;
@@ -374,6 +374,5 @@ footer a {
 padding: 0;
 text-decoration: none;
 }
-
 
 
