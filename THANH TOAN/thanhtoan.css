@@ -26,6 +26,7 @@
   
   .right {
     flex-basis: 50%;
+
   }
   
 form{
@@ -47,6 +48,7 @@ form input[type="text"]{
 	padding: 0.5rem 0.7rem;
 	margin: 0.5rem 0;
 	outline: none;
+  
 }
 
 #zip{
@@ -61,9 +63,10 @@ form input[type="text"]{
 	margin-left: 5px;	
 }
 .fixed-buttons-container {
+  width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  bottom: 20px; /* Điều chỉnh vị trí hiển thị của nút */
+  bottom: 0.1px; /* Điều chỉnh vị trí hiển thị của nút */
   background: #fff; /* Thay đổi màu nền tùy chọn */
   z-index: 999; /* Đảm bảo nó xuất hiện trước mọi thứ khác */
   display: flex;
@@ -72,6 +75,7 @@ form input[type="text"]{
   transition: transform 0.3s ease-in-out; /* Thêm hiệu ứng chuyển động */
   box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
+  margin: 0; 
 }
 .fixed-buttons-container a {
   color: #000;
