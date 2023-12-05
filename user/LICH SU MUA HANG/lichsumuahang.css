@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .history {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .history h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .order {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+  }
+  
+  .order .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .order .order-header .order-id {
+    font-weight: bold;
+  }
+  
+  .order .order-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .order .order-item {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .order .order-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .order .order-item .item-details {
+    flex-grow: 1;
+  }
+  
+  /* Tuỳ chỉnh màu sắc, font chữ và căn lề theo ý muốn của bạn */
+  

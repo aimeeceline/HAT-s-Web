@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kỹ năng sống - Phát triển cá nhân</title>
+  <title>GIỎ HÀNG</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/user/INDEX/index.css">
-  <link rel="stylesheet" href="/user/PHAN LOAI/pagination.css">
+  <link rel="stylesheet" href="/user/GIO HANG/giohang.css">
 </head>
 
 <body>
@@ -52,84 +53,55 @@
       </div>
     </nav>
     <!-----------------------------------Kết thúc Header--------------------------------------------------->
-    <h2>KỸ NĂNG SỐNG - PHÁT TRIỂN CÁ NHÂN</h2>
-    <div class="show">
-      <div id="accordion">
-        <div class="cap">Thể loại</div>
-        <div class="ct">
-          <label><input type="checkbox" class="theloai" value="Kỹ năng sống phát triển cá nhân">Kỹ năng sống phát triển
-            cá nhân</label>
-          <label><input type="checkbox" class="theloai" value="Manga-Comic">Manga-Comic</label>
-          <label><input type="checkbox" class="theloai" value="Nghệ thuật văn hóa">Nghệ thuật văn hóa</label>
-        </div>
-        <div class="cap">Giá bán</div>
-        <div class="ct">
-          <label><input type="checkbox" class="giaban" value="1">&#60 100.000 đ</label>
-          <label><input type="checkbox" class="giaban" value="2">100.000 đ - 500.000 đ</label>
-          <label><input type="checkbox" class="giaban" value="3">500.000 đ - 1.000.000 đ</label>
-        </div>
-        <button class="apply-button"><a href="/user/PHAN LOAI/NV/Nghệ thuật - Văn hóa.html">Áp dụng</a></button>
+    <!-----------------------------------PHẦN NỘI DUNG LÀM--------------------------------------------------->
+    <div class="wrapper">
+      <h1>Giỏ hàng của bạn:</h1>
+      <div class="row">
+        <table class="table table-bordered" id="table-products">
+          <thead>
+            <tr>
+              <th>SẢN PHẨM</th>
+              <th>GIÁ TIỀN</th>
+              <th>SỐ LƯỢNG</th>
+              <th>TÙY CHỌN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="sanpham">
+                <img src="/img/product/Nghệ thuật – Văn hóa/hoa sen 1.jpg">
+                <p>Từng Bước Nở Hoa Sen</p>
+              </td>
+              <td id="gia">100.000 đ</td>
+              <td>
+                <div id="buy-amount">
+                  <button class="minus-btn" onclick="handleMinus()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                    </svg>
+                  </button>
+                  <input type="text" name="amount" id="amount" value="1">
+                  <button class="plus-btn" onclick="handlePlus()"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                  </button>
+              </td>
+              <td id="xoa">XÓA</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
-      <div class="onmain">
-        <div class="on2main">
-          <div class="main"><a href="/user/CHI TIET SAN PHAM/KN/Chiến tranh tiền tệ.html"><img
-                src="/img/product/Kỹ năng sống - Phát triển cá nhân/Chiến tranh tiền tệ 1.jpg" alt=""></div>
-          <div class="unmain">
-            <p>Chiến Tranh Tiền Tệ</p>
-            <p><b>120.900 đ</b></p>
-          </div></a>
-        </div>
-
-        <div class="on2main">
-          <div class="main"><a href="/user/CHI TIET SAN PHAM/KN/Đắc nhân tâm.html"><img
-                src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt=""></div>
-          <div class="unmain">
-            <p>Đắc Nhân Tâm</p>
-            <p><b>77.400 đ</b></p>
-          </div></a>
-        </div>
-
-        <div class="on2main">
-          <div class="main"> <a href="#"><img
-                src="/img/product/Kỹ năng sống - Phát triển cá nhân/Dám Bị Ghét 1.jpg"></a></div>
-          <div class="unmain">
-            <p>Dám Bị Ghét</p>
-            <p><b>107.100 đ</b></p>
-          </div>
-        </div>
-
-        <div class="on2main">
-          <div class="main"><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/lãnh đạo tập sự 1.jpg"></div>
-          <div class="unmain">
-            <p>Lãnh Đạo Tập Sự</p>
-            <p><b>119.000 đ</b></p>
-          </div>
-        </div>
-
-        <div class="on2main">
-          <div class="main"><a href="#"><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/nhung nguoi 1.jpg"></a>
-          </div>
-          <div class="unmain">
-            <p>Những Người Khốn Khổ</p>
-            <p><b>585.000 đ</b></p>
-          </div>
-        </div>
-
-        <div class="on2main">
-          <div class="main"><a href="#"></a><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/nóng giận 1.jpg">
-          </div>
-          <div class="unmain">
-            <p>Nóng Giận Là Bản Năng, Tĩnh Lặng Là Bản Lĩnh</p>
-            <p><b>62.300 đ</b></p>
-          </div>
-        </div>
+      <div class="gogo">
+        <button onclick="myFunction()">Tiến hành thanh toán</button>
+        <script>
+          function myFunction() {
+            alert("ĐĂNG NHẬP / ĐĂNG KÝ ĐỂ TRẢI NGHIỆM MÙA HÀNG NHÉ!!!");
+            window.location.href = "/user/DANGNHAPDANGKY/signupsignin.html";
+          }
+        </script>
       </div>
-    </div>
-    <div class="pagination">
-      <li class="hientai">1</li>
-      <li><a href="/user/PHAN LOAI/KN/kynangsong2.html">2</li></a>
-      <li><a href="/user/PHAN LOAI/KN/kynangsong2.html">NEXT</li></a>
     </div>
     <!-----------------------------------Bắt đầu Footer------------------------------------------->
     <section class="contact" id="contact">
@@ -170,6 +142,31 @@
     </div>
   </footer>
 
+  <script>
+    let amountElement = document.getElementById('amount')
+
+    let amount = amountElement.value;
+
+    let render = (amount) => {
+      amountElement.value = amount
+    }
+    let handlePlus = () => {
+      amount++;
+      render(amount);
+    }
+    let handleMinus = () => {
+      if (amount > 1)
+        amount--;
+      render(amount);
+    }
+    amountElement.addEventListener('input', () => {
+      amount = amountElement.value;
+      amount = parseInt(amount);
+      amount = (isNaN(amount) || amount == 0) ? 1 : amount;
+      render(amount);
+      console.log(amount)
+    })
+  </script>
 </body>
 
 </html>

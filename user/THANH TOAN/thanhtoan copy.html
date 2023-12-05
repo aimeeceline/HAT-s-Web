@@ -6,15 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Thanh toán</title>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 	<link rel="stylesheet" href="/user/INDEX/index.css">
-	<link rel="stylesheet" href="/user/GIO HANG/giohang.css">
 	<link rel="stylesheet" href="/user/THANH TOAN/thanhtoan.css">
+	<link rel="stylesheet" href="/user/GIO HANG/giohang.css">
 </head>
 
 <body>
-	<!--------------------------Bắt đầu Header--------------------------------------------------->
+	<!------------------------Bắt đầu Header--------------------------------------------------->
 	<div class="container">
 		<nav>
 			<div class="logo">
@@ -39,26 +39,22 @@
 			
 		</nav>
 		<!-----------------------------------Kết thúc Header--------------------------------------------------->
-		
 		<div class="left">
-			<h3>---- ĐỊA CHỈ GIAO HÀNG ---------------------------------------------------------------------------------</h3>
-			<a href="/user/THANH TOAN/thanhtoan copy.html">
-				<p style="font-size: 15px; margin: 0 0 0 10px;">Chọn địa chỉ từ tài khoản</p>
-			</a>
+			<h3>ĐỊA CHỈ GIAO HÀNG</h3>
 			<form>
 				Họ và tên người nhận
-				<input type="text" name="" placeholder="Nhập họ và tên người nhận">
+				<input type="text" name="" value="Hien Anh Tuan">
 				Email
-				<input type="text" name="" placeholder="Nhập email">
+				<input type="text" name="" value="hienanhtuan02@gmail.com">
 				Số điện thoại
-				<input type="text" name="" placeholder="Ví dụ: 0934686xxx">
+				<input type="text" name="" value="0795793509">
 				Địa chỉ nhận hàng
-				<input type="text" name="" placeholder="Nhập địa chỉ nhận hàng">
+				<input type="text" name="" value="Đại học Sài Gòn CSC">
 
 			</form>
 		</div>
 		<div class="right">
-			<h3>---- PHƯƠNG THỨC THANH TOÁN ---------------------------------------------------------------------------------</h3>
+			<h3>PHƯƠNG THỨC THANH TOÁN</h3>
 			<form>
 				<input type="radio" id="age1" name="age" value="30">
 				<label for="age1">&nbsp;<img src="/img/banner/zalopay.png">&nbsp;&nbsp;ZALO</label><br>
@@ -100,22 +96,27 @@
 				</header>
 				<div class="fixed-buttons-container">
 					<div class="back-to-cart">
-						<a href="/user/GIO HANG/giohang.html">
+						<a href="/user/LICH SU MUA HANG/lichsumuahang.html">
 							<span>
 								<img
 									src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/btn_back.svg?q=10354">
 							</span>
-							<span>Quay về giỏ hàng</span>
+							<span>Xem lịch sử mua hàng</span>
 						</a>
 					</div>
-					<div class="checkout-button">
+					<div class="checkout-button" onclick="myFunction()">
 						<input type="submit" name="" value="THANH TOÁN NGAY!!!" class="checkout-btn">
 					</div>
+					<script>
+						function myFunction() {
+							alert("CẢM ƠN BẠN ĐÃ MUA HÀNG !!!");
+						}
+					</script>
 				</div>
 			</div>
 			<!-----------------------------------Bắt đầu Footer------------------------------------------->
 			<section class="contact" id="contact">
-				<h4>Contact Us</h4>
+				<h2>Contact Us</h2>
 				<p>Reach out to us for any inquiries or feedback.</p>
 				<p>-----------------------------------------------------------------------------------------------------------------
 				</p>

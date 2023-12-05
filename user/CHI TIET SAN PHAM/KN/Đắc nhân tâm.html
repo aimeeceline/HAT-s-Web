@@ -1,141 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ĐẮC NHÂN TÂM</title>
-    <link rel="stylesheet" href="/user/INDEX/index.css">
-    <link rel="stylesheet" href="/user/CHI TIET SAN PHAM/chitietsanpham.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ĐẮC NHÂN TÂM</title>
+  <link rel="stylesheet" href="/user/INDEX/index.css">
+  <link rel="stylesheet" href="/user/CHI TIET SAN PHAM/chitietsanpham.css">
 </head>
+
 <body>
-    <!--------------------------Bắt đầu Header--------------------------------------------------->
-    <div class="container">
-        <nav>
-          <div class="logo">
-            <a href="/user/INDEX/index.html"><img src="/img/banner/logoo.png" alt="Logo" height="120px" width="120px"></a>
-          </div>
-          <ul>
-            <li><a href="#">TÁC GIẢ</a></li>
-            <li class="theloai" ><a href="#">THỂ LOẠI</a>
-            <div class="menuu">
+  <!--------------------------Bắt đầu Header--------------------------------------------------->
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <a href="/user/INDEX/index.html"><img src="/img/banner/logoo.png" alt="Logo" height="120px" width="120px"></a>
+      </div>
+      <ul>
+        <li><a href="#">TÁC GIẢ</a></li>
+        <li class="theloai"><a href="#">THỂ LOẠI</a>
+          <div class="menuu">
             <ul>
               <li><a href="/user/PHAN LOAI/KN/kynangsong1.html">Kỹ năng sống - Phát triển cá nhân</a></li>
               <li><a href="/user/PHAN LOAI/MC/manga.html">Manga – Comic</a></li>
-              <li><a href="#">Nghệ thuật – Văn hóa</a></li>
+              <li><a href="/user/PHAN LOAI/NV/Nghệ thuật - Văn hóa.html">Nghệ thuật – Văn hóa</a></li>
             </ul>
+          </div>
+        </li>
+        <li><a href="#">SÁCH MỚI</a></li>
+        <li><a href="#">KHUYẾN MÃI</a></li>
+      </ul>
+      <div class="box">
+        <input type="checkbox" id="check">
+        <div class="search-box">
+          <input type="text" placeholder="Tìm kiếm">
+          <label for="check" class="icon">
+            <i class="fas fa-search"></i>
+          </label>
         </div>
-            </li>
-            <li><a href="#">SÁCH MỚI</a></li>
-            <li><a href="#">KHUYẾN MÃI</a></li>
-          </ul>
-          <div class="box">
-            <input type="checkbox" id="check">
-            <div class="search-box">
-              <input type="text" placeholder="Tìm kiếm">
-              <label for="check" class="icon">
-                <i class="fas fa-search"></i>
-              </label>
-            </div>
-          </div>
-          <div class="buttons">
-            <a href="signupsignin.html" class="login"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAkpJREFUSEvl1knIjVEcx/HPS+aNcWVnYSND5lKmiNgQC2RFyZBMCymlWFjItEBSNkRKSUJIFBtTkSHWZCEkRZGp/9u59bzPe+99njvUu3B2955zft/zH87vPB16aHT0EFcz4N4Yhynp0A/xHL8bCaJR8DIcxcgc5C0243JZeCPgw9haIHwIO8rAy4Ln42YSfIRdeJJ+T8L+TOrn4k4RvCz4FualWk7Gz5xwXzzGWFzHonaAe+Eb+mMTjtcQ3Yhj+Ioh+FMPXibi6OBnSWQxrtUQjCivprkxeNUqODr4XRJZhfM1BFfiXJqLPe9bBcf+TxiKel17ENvxESPaUePQ2IfdySSW4kpOeAkuIsxlD/a2CxyN9RKjkuD91MV9UifPTP+/Sa6W7/pu5yjTXJVN0WRnE6haQGGbUec4YOFoBBxicbU2YAGm41eKPO7uyaIrlD1No+DCSMouKAsehhmYhnCufjnAjxT5A0T9PxcdoAg8GAewltJP6N+U9p3JxaqeoR54OU5geGbn9+Ri1bx6PAZm1n7AelyqRq4Fjkc+0laZP40jeIGIqJZWPBJbsCYtiLVTUxm67KkGjpcmrsZoRIQLca+oZrn5WcnTIwOvEdnokqVq4LDFbUloHU41CK0sjzRHqWJ0s9pq4IhyAG6kaJvkdm67jfgwCM1B9e5xXJsw+RgrcKEVKlbjTNKIN/pLRS8f8cTMJ03UNqJuZWTf6LDc6J3OkQfPznwvzcHdVqioqZcHh2FMSLCn2dQ0eYCaekXO1SSveNv/B/4HUH5pHwh1c9gAAAAASUVORK5CYII="/></a>
-            <a>
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXRJREFUSEvt1r9LVlEcx/GX4Kbg6iRSkG4m4pZRQ2OCm4Tg/9AgKE6Co+i/ENLgEgRBS5CUm4I4BWKSe+DSmsSR88jj7V7v90TwODxnO+d8zud9vz+4fAf0aA30iOtfwIOYxkz+6CMc43dJECXgpF3FCkYqkEtsYCcKLwHvYqnFeBuvI/Ao+BXeZsOLbP4l759hC2N5/wKf2uBR8Hc8QErpI/ysGI/iDEM4wNz/AD/MpslrHZsNpul8DVe5B37dBY9E/ARfs8lLfGgwnMf7fDeL1O2NKwJONfycHZ5jv8Etqrt+XgUP4yTXs61MJffnmMJN+qvg1BSdbi0xjmifdpXsr4i70/UGPzCO5ezcOasD1em6z26VqRpxXZ2itSt6e6/Bkfo1aRqzFYm4Dy7JQD/VN7/bfnNF/1LRBrv/zTWJb9FwCnUTOO28qRsE3mGh0LRNvofFblEdOJ2lMeZxzaDQBqjep/nrEB+rF5HRpxQW0vcM/AcLDWsfXKwkoAAAAABJRU5ErkJggg=="/>
-                  <span>0</span>
-            </a>
-          </div>
-        </nav>
-      
-      <!-----------------------------------Kết thúc Header--------------------------------------------------->
+      </div>
+      <div class="buttons">
+        <a href="/user/DANGNHAPDANGKY/signupsignin.html" class="login"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAkpJREFUSEvl1knIjVEcx/HPS+aNcWVnYSND5lKmiNgQC2RFyZBMCymlWFjItEBSNkRKSUJIFBtTkSHWZCEkRZGp/9u59bzPe+99njvUu3B2955zft/zH87vPB16aHT0EFcz4N4Yhynp0A/xHL8bCaJR8DIcxcgc5C0243JZeCPgw9haIHwIO8rAy4Ln42YSfIRdeJJ+T8L+TOrn4k4RvCz4FualWk7Gz5xwXzzGWFzHonaAe+Eb+mMTjtcQ3Yhj+Ioh+FMPXibi6OBnSWQxrtUQjCivprkxeNUqODr4XRJZhfM1BFfiXJqLPe9bBcf+TxiKel17ENvxESPaUePQ2IfdySSW4kpOeAkuIsxlD/a2CxyN9RKjkuD91MV9UifPTP+/Sa6W7/pu5yjTXJVN0WRnE6haQGGbUec4YOFoBBxicbU2YAGm41eKPO7uyaIrlD1No+DCSMouKAsehhmYhnCufjnAjxT5A0T9PxcdoAg8GAewltJP6N+U9p3JxaqeoR54OU5geGbn9+Ri1bx6PAZm1n7AelyqRq4Fjkc+0laZP40jeIGIqJZWPBJbsCYtiLVTUxm67KkGjpcmrsZoRIQLca+oZrn5WcnTIwOvEdnokqVq4LDFbUloHU41CK0sjzRHqWJ0s9pq4IhyAG6kaJvkdm67jfgwCM1B9e5xXJsw+RgrcKEVKlbjTNKIN/pLRS8f8cTMJ03UNqJuZWTf6LDc6J3OkQfPznwvzcHdVqioqZcHh2FMSLCn2dQ0eYCaekXO1SSveNv/B/4HUH5pHwh1c9gAAAAASUVORK5CYII=" /></a>
+        <a href="/user/GIO HANG/giohang.html" class="cart">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXRJREFUSEvt1r9LVlEcx/GX4Kbg6iRSkG4m4pZRQ2OCm4Tg/9AgKE6Co+i/ENLgEgRBS5CUm4I4BWKSe+DSmsSR88jj7V7v90TwODxnO+d8zud9vz+4fAf0aA30iOtfwIOYxkz+6CMc43dJECXgpF3FCkYqkEtsYCcKLwHvYqnFeBuvI/Ao+BXeZsOLbP4l759hC2N5/wKf2uBR8Hc8QErpI/ysGI/iDEM4wNz/AD/MpslrHZsNpul8DVe5B37dBY9E/ARfs8lLfGgwnMf7fDeL1O2NKwJONfycHZ5jv8Etqrt+XgUP4yTXs61MJffnmMJN+qvg1BSdbi0xjmifdpXsr4i70/UGPzCO5ezcOasD1em6z26VqRpxXZ2itSt6e6/Bkfo1aRqzFYm4Dy7JQD/VN7/bfnNF/1LRBrv/zTWJb9FwCnUTOO28qRsE3mGh0LRNvofFblEdOJ2lMeZxzaDQBqjep/nrEB+rF5HRpxQW0vcM/AcLDWsfXKwkoAAAAABJRU5ErkJggg==" />
+          <span>&nbsp;1&nbsp;</span>
+        </a>
+      </div>
+    </nav>
+    <!-----------------------------------Kết thúc Header--------------------------------------------------->
     <div class="center">
-        <div class="image">
-            <div class="big-image">
-                <img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg">
-            </div>
-            <div class="small-image">
-                <img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg">
-                <img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 2.jpg">
-                <img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 3.jpg">
-            </div>
+      <div class="image">
+        <div class="big-image">
+          <img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg">
         </div>
-        <div class="infor">
-            <h1 class="name">Đắc Nhân Tâm</h1>
-            <div class="price">77.400 đ</div>
-            <div class="description"><b>Tác giả:</b> Dale Carnegie<br><b>Nhà xuất bản:</b>Văn Học
-             <br><br>Đắc nhân tâm của Dale Carnegie là quyển sách của mọi thời đại và một hiện tượng 
-             đáng kinh ngạc trong ngành xuất bản Hoa Kỳ. Chiếm vị trí số một trong danh mục sách bán chạy nhất và trở thành một sự kiện có một 
-             không hai trong lịch sử ngành xuất bản thế giới và được đánh giá là một quyển sách có tầm ảnh hưởng nhất mọi thời đại.
-            </div>
-            <div class="buttons">
-                <button id="addToCartBtn">Thêm vào giỏ hàng</button>
-            </div>
+        <div class="small-image">
+          <img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg">
+          <img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 2.jpg">
+          <img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 3.jpg">
         </div>
-         </div>  
-        
-    <div class="othersProduct">
-        <h1>SẢN PHẨM KHÁC</h1>
-        <div class="onmainindex">
+      </div>
+      <div class="infor">
+        <h1 class="name">Đắc Nhân Tâm</h1>
+        <div class="price">77.400 đ</div>
+        <div class="description"><b>Tác giả:</b> Dale Carnegie<br><b>Nhà xuất bản:</b>Văn Học
+          <br><br>Đắc nhân tâm của Dale Carnegie là quyển sách của mọi thời đại và một hiện tượng
+          đáng kinh ngạc trong ngành xuất bản Hoa Kỳ. Chiếm vị trí số một trong danh mục sách bán chạy nhất và trở thành
+          một sự kiện có một
+          không hai trong lịch sử ngành xuất bản thế giới và được đánh giá là một quyển sách có tầm ảnh hưởng nhất mọi
+          thời đại.
+        </div>
+        <div class="rating">
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9734;</span>
+          <span class="nbuy">(109)</span>
+        </div>
+        <div class="buttons">
+          <button onclick="myFunction()">Thêm vào giỏ hàng</button>
 
-          <div class="on2main">
-          <div class="main"><a href="#"><img src="/img/product/Manga – Comic/Chú thuật hồi chiến 1.jpg"></a></div>
-               <div class="unmain">
-                <p>Chú Thuật Hồi Chiến</p>
-                <p><b>150.000 đ</b></p>
-              </div>
-              </div>
-    
-          <div class="on2main">
-          <div class="main"><a href="/user/CHI TIET SAN PHAM/KN/Chiến tranh tiền tệ.html"><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Chiến tranh tiền tệ 1.jpg"></div>
+        </div>
+        <script>
+          function myFunction() {
+            alert("ĐÃ THÊM VÀO GIỎ HÀNG!!!");
+          }
+        </script>
+      </div>
+    </div>
+
+    <div class="othersProduct">
+      <h1>SẢN PHẨM KHÁC</h1>
+      <div class="onmainindex">
+
+        <div class="on2main">
+          <div class="main"><a href="/user/CHI TIET SAN PHAM/MC/Chú thuật hồi chiến.html">
+            <img src="/img/product/Manga – Comic/Chú thuật hồi chiến 1.jpg"></div>
+          <div class="unmain">
+            <p>Chú Thuật Hồi Chiến</p>
+            <p><b>150.000 đ</b></p>
+          </div></a>
+        </div>
+
+        <div class="on2main">
+          <div class="main"><a href="/user/CHI TIET SAN PHAM/KN/Chiến tranh tiền tệ.html"><img
+                src="/img/product/Kỹ năng sống - Phát triển cá nhân/Chiến tranh tiền tệ 1.jpg"></div>
           <div class="unmain">
             <p>Chiến Tranh Tiền Tệ</p>
             <p><b>120.900 đ</b></p>
-          </div></a> </div>
-         
-          <div class="on2main">
+          </div></a>
+        </div>
+
+        <div class="on2main">
           <div class="main"><a href="#"></a><img src="/img/product/Nghệ thuật – Văn hóa/giận 1.jpg" alt=""></a></div>
           <div class="unmain">
             <p>Giận</p>
             <p><b>107.000 đ</b></p>
           </div>
-           </div>
-    
-          <div class="on2main">
-            <div class="main"><a href="#"></a><img src="/img/product/Nghệ thuật – Văn hóa/Kiếp Nào Ta Cũng Tìm Thấy Nhau 1.jpg" alt=""></div>
-            <div class="unmain">
-              <p>Kiếp Nào Ta Cũng Tìm Thấy Nhau</p>
-              <p><b>89.000 đ</b></p>
-            </div>
+        </div>
+
+        <div class="on2main">
+          <div class="main"><a href="#"></a><img
+              src="/img/product/Nghệ thuật – Văn hóa/Kiếp Nào Ta Cũng Tìm Thấy Nhau 1.jpg" alt=""></div>
+          <div class="unmain">
+            <p>Kiếp Nào Ta Cũng Tìm Thấy Nhau</p>
+            <p><b>89.000 đ</b></p>
           </div>
-          </div>
+        </div>
+      </div>
     </div>
     <!-----------------------------------Bắt đầu Footer------------------------------------------->
     <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Reach out to us for any inquiries or feedback.</p>
-        <div class="row">
-          <div class="col information">
-            <div class="contact-details">
-              <p><i class="fas fa-map-marker-alt"></i> 273 An Dương Vương, Quận 5</p>
-              <p><a href="mailto:tuanron2004@gmail.com"><i class="fas fa-envelope"></i> tuanron2004@gmail.com</a></p>
-              <p><a href="tel:0796553739"><i class="fas fa-phone"></i> (84) 796553739</a></p>
-              <p><i class="fas fa-clock"></i> Monday - Saturday: 9:00 AM - 5:00 PM</p>
-              <p><i class="fas fa-clock"></i> Sunday: Closed</p>
-              <p><i class="fas fa-globe"></i> www.hatbook.com</p>
-            </div>          
-          </div>
+      <h2>Contact Us</h2>
+      <p>Reach out to us for any inquiries or feedback.</p>
+      <p>
+        -----------------------------------------------------------------------------------------------------------------
+      </p>
+      <div class="contact-details">
+        <div class="left-column">
+          <p><i class="fas fa-map-marker-alt"></i> 273 An Dương Vương, Quận 5</p>
+          <p><i class="fas fa-envelope"></i> HAT2004@gmail.com</p>
+          <p><i class="fas fa-phone"></i> (84) 796553739</p>
         </div>
-      </section>
-    </div>
-    </div>
-      <footer>
-        <div>
-          <span>Copyright © 2023 All Rights Reserved</span>
-          <span class="link">
-              <a href="#">Home</a>
-              <a href="#contact">Contact</a>
-          </span>
+        <div class="right-column">
+          <p><i class="fas fa-clock"></i> Monday - Saturday: 9:00 AM - 5:00 PM</p>
+          <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+          <p><i class="fas fa-globe"></i> www.hatbook.com</a></p>
         </div>
-      </footer>
+        <div class="getdetail">
+          <h3>GET OUR DETAILS:</h3>
+          <form>
+            <label for="emailInput">Email:</label>
+            <input type="email" id="emailInput" name="email" placeholder="Nhập địa chỉ email của bạn" required>
+            <input type="submit" value="Gửi">
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  </div>
+  <footer>
+    <div>
+      <span>Copyright © 2023 All Rights Reserved</span>
+      <span class="link">
+        <a href="/user/INDEX/index.html">Home</a>
+      </span>
     </div>
+  </footer>
+
 </body>
+
 </html>
