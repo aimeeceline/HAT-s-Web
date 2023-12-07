@@ -8,7 +8,7 @@
     <title>Quản lý đơn hàng</title>
     <!-- ======= Styles ====== -->
     <link rel="stylesheet" href="/admin/indexadmin.css">
-    <link rel="stylesheet" href="/admin/quanlydonhang.css">
+    <link rel="stylesheet" href="/admin/quanlykhachhang.css">
 </head>
 
 <body>
@@ -81,7 +81,19 @@
 
             <!-- ================ LÀM QUẢN LÝ KHÁCH HÀNG Ở ĐÂY ================= -->
             <div class="user">
-                
+                <div class="banner">
+                    <button id="adduser">+ Thêm người dùng</button>
+                    <select id="option">
+                        <option>Tất cả</option>
+                        <option>Đang hoạt động</option>
+                        <option> <a href="#">Đã khóa</a></option>
+                    </select>
+                    <select id="option">
+                        <option>Mới nhất</option>
+                        <option>Cũ nhất</option>
+                    </select>
+                    <input id="timnguoidung" type="text" placeholder="Tên người dùng ...">
+                </div>
             </div>
         </div>
     </div>
