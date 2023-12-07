@@ -1,0 +1,85 @@
+.chitietdonhang{
+    margin: 10px 10px 10px 30px;
+}
+#banner {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+#address{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin: 20px;
+    margin-left: auto;
+    width: 80%;
+}
+.step:first-child .step-text {
+    color: #2dc258;
+}
+.step {
+    position: relative;
+  }
+  
+  .step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 26%;
+    left: 29px; /* Khoảng cách giữa các bước */
+    transform: translateY(-50%);
+    height: 3px; /* Chiều cao của đường line */
+    width: 222px; /* Độ dài của đường line */
+    background-color: #2dc258; /* Màu sắc của đường line */
+  }
+
+.step-text{
+    padding: 5px;
+    margin-left: -40%;
+}
+
+.step:not(:last-child) .step-icon {
+    background-color: #2dc258;
+    color: white;
+}
+
+.step-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #666;
+}
+.diachigiaohang{
+    display: flex;
+    margin-top: 20px;
+}
+.thongtinnguoimua{
+    width: 40%;
+}
+
+
+.delivery-status {
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+}
+
+.status {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 5px 0;
+}
+#time{
+    color: #2dc258;
+}

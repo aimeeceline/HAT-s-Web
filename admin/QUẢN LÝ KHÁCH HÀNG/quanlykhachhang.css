@@ -3,10 +3,11 @@
   
 }
 .banner{
+  margin: 20px;
     display: flex;
     background-color: black;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
 }
 .banner #adduser{
     padding: 10px 20px;

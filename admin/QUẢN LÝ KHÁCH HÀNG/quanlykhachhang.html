@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lý khách hàng</title>
     <!-- ======= Styles ====== -->
-    <link rel="stylesheet" href="/admin/indexadmin.css">
-    <link rel="stylesheet" href="/admin/quanlykhachhang.css">
+    <link rel="stylesheet" href="/admin/TRANG CHỦ QUẢN TRỊ/indexadmin.css">
+    <link rel="stylesheet" href="/admin/QUẢN LÝ KHÁCH HÀNG/quanlykhachhang.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                 </li>
 
                 <li>
-                    <a href="/admin/trangchuadmin.html">
+                    <a href="/admin/TRANG CHỦ QUẢN TRỊ/trangchuadmin.html">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -35,7 +35,7 @@
                 </li>
 
                 <li>
-                    <a href="/admin/quanlydonhang.html">
+                    <a href="/admin/QUẢN LÝ ĐƠN HÀNG/quanlydonhang.html">
                         <span class="icon">
                             <ion-icon name="cart-outline"></ion-icon>
                         </span>
@@ -44,7 +44,7 @@
                 </li>
 
                 <li>
-                    <a href="/admin/quanlysanpham.html">
+                    <a href="/admin/QUẢN LÝ SẢN PHẨM/quanlysanpham.html">
                         <span class="icon">
                             <ion-icon name="book-outline"></ion-icon>
                         </span>
@@ -53,7 +53,7 @@
                 </li>
 
                 <li>
-                    <a href="/admin/quanlykhachhang.html" id="active">
+                    <a href="/admin/QUẢN LÝ KHÁCH HÀNG/quanlykhachhang.html" id="active">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>
@@ -66,16 +66,14 @@
         <!-- ========================= Main ==================== -->
         <div class="main">
             <div class="topbar">
-
+                <div class="hello">
+                    <p>CHÀO MỪNG QUẢN TRỊ CỦA HAT !!!</p>
+                </div>
                 <div class="search">
                     <label>
                         <input type="text" placeholder="Search here">
                         <ion-icon name="search-outline"></ion-icon>
                     </label>
-                </div>
-
-                <div class="user">
-                    <p>CHÀO MỪNG QUẢN TRỊ CỦA HAT </p>
                 </div>
             </div>
 
@@ -83,8 +81,63 @@
             <div class="user">
                 <div class="banner">
                     <button id="adduser">+ Thêm người dùng</button>
+                    <div class="boxadduser" id="boxadduser">
+                        <h2>Thêm người dùng mới</h2>
+                        <form action="#" method="post" id="addUserForm">
+                            <div class="form-group">
+                                <label for="username">Tên đăng nhập:</label>
+                                <input type="text" id="username" placeholder="aimeeceline00">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Họ và tên:</label>
+                                <input type="text" id="name" placeholder="Lê Thị Lan Anh">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="text" id="email" placeholder="lelananh02@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="goi">Gói:</label>
+                                <select id="goi" name="goi">
+                                    <option>Cơ bản</option>
+                                    <option>Tiêu chuẩn</option>
+                                    <option>Cao cấp</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mật khẩu mặc định:</label>
+                                <input type="password" id="password" value="password">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Thêm">
+                            </div>
+                        </form>
+                    </div>
+
+                    <script>
+
+                        const adduserBtn = document.getElementById('adduser');
+                        const boxadduser = document.getElementById('boxadduser');
+                        const addUserForm = document.getElementById('addUserForm');
 
 
+                        adduserBtn.addEventListener('click', function () {
+
+                            if (boxadduser.style.display === 'none' || boxadduser.style.display === '') {
+                                boxadduser.style.display = 'block';
+                            } else {
+                                boxadduser.style.display = 'none';
+                            }
+                        });
+
+                        addUserForm.addEventListener('submit', function (event) {
+                            event.preventDefault();
+
+
+                            alert('Đã thêm người dùng');
+                            window.location.href = '/admin/QUẢN LÝ KHÁCH HÀNG/qlkhadduser.html';
+                        });
+                    </script>
 
                     <select id="option">
                         <option>Tất cả</option>
@@ -99,7 +152,6 @@
                     </select>
                     <input id="timnguoidung" type="text" placeholder="Tên người dùng ...">
                 </div>
-                
                 <div class="user-table">
                     <table>
                         <thead>
@@ -115,82 +167,9 @@
                         </thead>
 
                         <tbody>
-                            
+
                             <tr>
                                 <td>1</td>
-                                <td>aimeeceline00</td>
-                                <td>Lê Thị Lan Anh</td>
-                                <td>lelananh02@gmail.com</td>
-                                <td id="basic">Cơ bản</td>
-                                <td>08/12/2004</td>
-                                <td>
-                                    <button id="suanguoidung">Sửa</button>
-                                    <button onclick="myFunction()" id="xoanguoidung">Khóa</button>
-                                    <script>
-                                        function myFunction() {
-                                            const confirmation = confirm("Bạn có chắc chắn muốn khóa người dùng aimeeceline00 ??? ");
-                                            if (confirmation) {
-                                                const reason = prompt("Nhập lý do khóa người dùng:");
-                                                if (reason !== null && reason !== "") {
-                                                    window.location.href = '/admin/qlkhlockeduser.html';
-                                                }
-                                            }
-                                        }
-                                    </script>
-                                </td>
-                            </tr>
-                            <div class="boxsuauser" id="boxsuauser">
-                                <h2>Sửa thông tin aimeeceline00</h2>
-                                <form action="#" method="post" id="suaUserForm">
-                                    <div class="form-group">
-                                        <label for="username">Tên đăng nhập:</label>
-                                        <input type="text" id="username" placeholder="aimeeceline00">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="name">Họ và tên:</label>
-                                        <input type="text" id="name" placeholder="Lê Thị Lan Anh">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email:</label>
-                                        <input type="text" id="email" placeholder="lelananh02@gmail.com">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="goi">Gói:</label>
-                                        <select id="goi" name="goi">
-                                            <option>Cơ bản</option>
-                                            <option>Tiêu chuẩn</option>
-                                            <option>Cao cấp</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="password">Mật khẩu:</label>
-                                        <input type="password" id="password" value="password">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" value="Cập nhật">
-                                    </div>
-                                </form>
-                            </div>
-        
-                            <script>
-                                const reuserBtn = document.getElementById('suanguoidung');
-                                const boxreuser = document.getElementById('boxsuauser');
-                                const reUserForm = document.getElementById('suaUserForm');                               
-                                reuserBtn.addEventListener('click', function () {                
-                                    if (boxreuser.style.display === 'none' || boxreuser.style.display === '') {
-                                        boxreuser.style.display = 'block';
-                                    } else {
-                                        boxreuser.style.display = 'none';
-                                    }
-                                });                
-                                reUserForm.addEventListener('submit', function (event) {
-                                    event.preventDefault();                
-                                    alert('Đã cập nhật thông tin');
-                                    boxreuser.style.display = 'none';
-                                });
-                            </script>
-                            <tr>
-                                <td>2</td>
                                 <td>thaihien99</td>
                                 <td>Trần Thái Hiễn</td>
                                 <td>tranthaihien02@gmail.com</td>
@@ -198,12 +177,13 @@
                                 <td>14/10/2023</td>
                                 <td>
                                     <button id="suanguoidung">Sửa</button>
+                                    
                                     <button id="xoanguoidung">Khóa</button>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>3</td>
+                                <td>2</td>
                                 <td>vantuan00</td>
                                 <td>Nguyễn Văn Tuấn</td>
                                 <td>vantuan123@gmail.com</td>
@@ -216,7 +196,7 @@
                             </tr>
 
                             <tr>
-                                <td>4</td>
+                                <td>3</td>
                                 <td>myhuong7749</td>
                                 <td>Lê Thị Mỹ Hương</td>
                                 <td>heoconlonton@gmail.com</td>
@@ -229,7 +209,7 @@
                             </tr>
 
                             <tr>
-                                <td>5</td>
+                                <td>4</td>
                                 <td>hoasenhong404</td>
                                 <td>Hồ Kim Sen</td>
                                 <td>trongdamgidepbangsen@gmail.com</td>
@@ -240,17 +220,34 @@
                                     <button id="xoanguoidung">Khóa</button>
                                 </td>
                             </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>umboumbo11</td>
+                                <td>Lê Thị Bò</td>
+                                <td>lelananh02@gmail.com</td>
+                                <td id="basic">Cơ bản</td>
+                                <td>08/12/2023</td>
+                                <td>
+                                    <button id="suanguoidung">Sửa</button>
+                                    <button id="xoanguoidung">Khóa</button>
+                                </td>
+                            </tr>
+
+
+
+
                         </tbody>
                     </table>
                 </div>
                 <div class="pagination">
                     <li class="hientai">1</li>
-                    <li><a href="#">2</li></a>
-                    <li><a href="#">3</li></a>
-                    <li><a href="#">...</li></a>
-                    <li><a href="#">NEXT</li></a>
+                    <li>2</li></a>
+                    <li>3</li></a>
+                    <li>...</li></a>
+                    <li>NEXT</li></a>
                 </div>
-                <!-- ================ Add Charts JS ================= -->
+            <!-- ================ Add Charts JS ================= -->
             <div class="chartsBx">
                 <h2>THỐNG KÊ LƯỢNG ĐĂNG KÝ NĂM 2023</h2>
                 <div class="chart"> <canvas id="chart-2"></canvas> </div>
@@ -260,7 +257,7 @@
     </div>
     <!-- ======= Charts JS ====== -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
-    <script src="/admin/js/chartsJS.js"></script>
+    <script src="/admin/js/chartuser.js"></script>
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
