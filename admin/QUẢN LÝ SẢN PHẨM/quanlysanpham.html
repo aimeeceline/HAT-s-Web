@@ -84,54 +84,55 @@
                 <div class="banner">
                     <button id="adduser"><a href="/admin/QUẢN LÝ SẢN PHẨM/themsanpham.html">+ Thêm sản phẩm</a></button>
                     <div class="finder">
-                    <!-- Dropdown -->
-                    <select id="searchType" name="searchType" onchange="changeContent()">
-                        <option value="category">Tìm theo danh mục</option>
-                        <option value="publisher">Tìm theo nhà xuất bản</option>
-                    </select>
+                        <!-- Dropdown -->
+                        <select id="searchType" name="searchType" onchange="changeContent()">
+                            <option value="category">Tìm theo danh mục</option>
+                            <option value="publisher">Tìm theo nhà xuất bản</option>
+                        </select>
 
-                    <!-- Box cần thay đổi nội dung -->
-                    <select id="contentBox">
-                        <option value="KNS-PTCN">Kỹ năng sống - Phát triển cá nhân</option>
-                        <option value="MG-CM">Manga-Comic</option>
-                        <option value="NT-VH">Nghệ thuật-Văn hóa</option>
-                    </select>
-                </div>
+                        <!-- Box cần thay đổi nội dung -->
+                        <select id="contentBox">
+                            <option value="KNS-PTCN">Kỹ năng sống - Phát triển cá nhân</option>
+                            <option value="MG-CM">Manga-Comic</option>
+                            <option value="NT-VH">Nghệ thuật-Văn hóa</option>
+                        </select>
+                    </div>
                     <script>
                         function changeContent() {
                             const selectedValue = document.getElementById('searchType').value;
                             const contentBox = document.getElementById('contentBox');
 
                             if (selectedValue === 'category') {
-                                // Nếu chọn Tìm theo danh mục
                                 contentBox.innerHTML = `
-            <option value="KNS-PTCN">Kỹ năng sống - Phát triển cá nhân</option>
+            <option value="KNS-PTCN">Kỹ năng sống-Phát triển cá nhân</option>
             <option value="MG-CM">Manga-Comic</option>
             <option value="NT-VH">Nghệ thuật-Văn hóa</option>
         `;
                             } else if (selectedValue === 'publisher') {
-                                // Nếu chọn Tìm theo nhà xuất bản
                                 contentBox.innerHTML = `
-            <option value="Publisher1">Nhà xuất bản 1</option>
-            <option value="Publisher2">Nhà xuất bản 2</option>
-            <option value="Publisher3">Nhà xuất bản 3</option>
+            <option value="Publisher1">Nhà xuất bản Kim Đồng</option>
+            <option value="Publisher2">Nhà xuất bản Lao Động</option>
+            <option value="Publisher3">Nhà xuất bản Trẻ</option>
         `;
                             } else {
-                                // Nếu có thêm các lựa chọn khác
                                 contentBox.innerHTML = '';
                             }
                         }
-
                     </script>
-
                     <input id="timnguoidung" type="text" placeholder="Tên sản phẩm cần tìm">
                 </div>
-
+                <!-- ================ Add Charts JS ================= -->
+            <div class="chartsBx">
+                <h2>TOP 10 SÁCH CÓ SỐ LƯỢNG BÁN RA CAO NHẤT TRONG NĂM 2023</h2>
+                <div class="chart"> <canvas id="chart-4"></canvas> </div>
+            </div>
+            
                 <div class="user-table">
                     <table>
                         <thead>
                             <tr>
                                 <td>STT</td>
+                                <td>Mã SP</td>
                                 <td>Ảnh</td>
                                 <td>Tên SP </td>
                                 <td>Danh mục</td>
@@ -145,6 +146,7 @@
 
                             <tr>
                                 <td>1</td>
+                                <td>KNS49</td>
                                 <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt="">
                                 </td>
                                 <td>Đắc nhân tâm</td>
@@ -241,57 +243,11 @@
                                 </form>
                             </div>
 
-                            <script>
-                                let shouldDisplayBox = false;
-
-                                function selectImage(imageId, event) {
-                                    event.stopPropagation();
-                                    shouldDisplayBox = true;
-                                }
-
-                                function deleteImage(imageId, event) {
-                                    event.stopPropagation();
-                                    shouldDisplayBox = true;
-                                }
-
-                                function updateData() {
-                                    alert('Bạn có chắc chắn muốn lưu thay đổi? Hãy xác nhận');
-                                    if (!shouldDisplayBox) {
-                                        const boxreuser = document.getElementById('boxsuauser');
-                                        boxreuser.style.display = 'none';
-                                    }
-                                    shouldDisplayBox = false; // Reset lại biến flag sau khi cập nhật
-                                }
-
-                                const reuserBtn = document.getElementById('suanguoidung');
-                                reuserBtn.addEventListener('click', function () {
-                                    const boxreuser = document.getElementById('boxsuauser');
-                                    if (shouldDisplayBox) {
-                                        shouldDisplayBox = false;
-                                    } else {
-                                        if (boxreuser.style.display === 'none' || boxreuser.style.display === '') {
-                                            boxreuser.style.display = 'block';
-                                        } else {
-                                            boxreuser.style.display = 'none';
-                                        }
-                                    }
-                                });
-
-                                const reUserForm = document.getElementById('suaUserForm');
-                                reUserForm.addEventListener('submit', function (event) {
-                                    event.preventDefault();
-                                    alert('Đã cập nhật thay đổi!');
-                                    if (!shouldDisplayBox) {
-                                        const boxreuser = document.getElementById('boxsuauser');
-                                        boxreuser.style.display = 'none';
-                                    }
-                                    shouldDisplayBox = false;
-                                });
-
-                            </script>
+                            <script src="/admin/js/suasanpham.js"></script>
 
                             <tr>
                                 <td>1</td>
+                                <td>KNS49</td>
                                 <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt="">
                                 </td>
                                 <td>Đắc nhân tâm</td>
@@ -307,6 +263,7 @@
 
                             <tr>
                                 <td>1</td>
+                                <td>KNS49</td>
                                 <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt="">
                                 </td>
                                 <td>Đắc nhân tâm</td>
@@ -322,6 +279,7 @@
 
                             <tr>
                                 <td>1</td>
+                                <td>KNS49</td>
                                 <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt="">
                                 </td>
                                 <td>Đắc nhân tâm</td>
@@ -337,6 +295,7 @@
 
                             <tr>
                                 <td>1</td>
+                                <td>KNS49</td>
                                 <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt="">
                                 </td>
                                 <td>Đắc nhân tâm</td>
@@ -361,6 +320,9 @@
                 </div>
             </div>
         </div>
+        <!-- ======= Charts JS ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="/admin/js/chartsachbanchay.js"></script>
         <!-- ====== ionicons ======= -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
