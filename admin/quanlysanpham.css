@@ -42,6 +42,9 @@
   .boxsuauser{
     display: none;
     position: fixed;
+    top: 45%;
+    left: 40%;
+    transform:translate(-50%,-50%);
     width: 50%;
     margin-top:50px;
     margin-left: 240px;
@@ -54,12 +57,15 @@
   .boxadduser h2,
   .boxsuauser h2 {
     text-align: center;
+    padding-top: 10px;
   }
   
   .boxadduser .form-group, 
   .boxsuauser .form-group {
     margin-bottom: 15px;
+
   }
+  
   
   .boxadduser label, 
   .boxsuauser label {
@@ -75,9 +81,11 @@
   .boxsuauser input[type="password"]
   {
     width: 100%;
+    height: 35px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    margin-top: 5px;
   }
   
   .boxadduser input[type="submit"],
