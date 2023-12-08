@@ -82,18 +82,48 @@
             <!-- ================ LÀM QUẢN LÝ SẢN PHẨM Ở ĐÂY ================= -->
             <div class="user">
                 <div class="banner">
-                    <button id="adduser">+ Thêm sản phẩm</button>
-                    <select id="option">
-                        <option>Tất cả</option>
-                        <option>Cơ bản</option>
-                        <option>Tiêu chuẩn</option>
-                        <option>Cao cấp</option>
-                        <option> <a href="#">Đã khóa</a></option>
+                    <button id="adduser"><a href="/admin/QUẢN LÝ SẢN PHẨM/themsanpham.html">+ Thêm sản phẩm</a></button>
+                    <div class="finder">
+                    <!-- Dropdown -->
+                    <select id="searchType" name="searchType" onchange="changeContent()">
+                        <option value="category">Tìm theo danh mục</option>
+                        <option value="publisher">Tìm theo nhà xuất bản</option>
                     </select>
-                    <select id="option">
-                        <option>Mới nhất</option>
-                        <option>Cũ nhất</option>
+
+                    <!-- Box cần thay đổi nội dung -->
+                    <select id="contentBox">
+                        <option value="KNS-PTCN">Kỹ năng sống - Phát triển cá nhân</option>
+                        <option value="MG-CM">Manga-Comic</option>
+                        <option value="NT-VH">Nghệ thuật-Văn hóa</option>
                     </select>
+                </div>
+                    <script>
+                        function changeContent() {
+                            const selectedValue = document.getElementById('searchType').value;
+                            const contentBox = document.getElementById('contentBox');
+
+                            if (selectedValue === 'category') {
+                                // Nếu chọn Tìm theo danh mục
+                                contentBox.innerHTML = `
+            <option value="KNS-PTCN">Kỹ năng sống - Phát triển cá nhân</option>
+            <option value="MG-CM">Manga-Comic</option>
+            <option value="NT-VH">Nghệ thuật-Văn hóa</option>
+        `;
+                            } else if (selectedValue === 'publisher') {
+                                // Nếu chọn Tìm theo nhà xuất bản
+                                contentBox.innerHTML = `
+            <option value="Publisher1">Nhà xuất bản 1</option>
+            <option value="Publisher2">Nhà xuất bản 2</option>
+            <option value="Publisher3">Nhà xuất bản 3</option>
+        `;
+                            } else {
+                                // Nếu có thêm các lựa chọn khác
+                                contentBox.innerHTML = '';
+                            }
+                        }
+
+                    </script>
+
                     <input id="timnguoidung" type="text" placeholder="Tên sản phẩm cần tìm">
                 </div>
 
@@ -101,24 +131,27 @@
                     <table>
                         <thead>
                             <tr>
+                                <td>STT</td>
                                 <td>Ảnh</td>
-                                <td>Tên sản phẩm </td>
-                                <td>Giá </td>
+                                <td>Tên SP </td>
+                                <td>Danh mục</td>
+                                <td>Giá</td>
+                                <td>Tồn kho</td>
                                 <td>Ngày cập nhật</td>
-                                <td>Ngày tạo</td>
-
                                 <td>Thao tác</td>
                             </tr>
                         </thead>
                         <tbody>
 
                             <tr>
+                                <td>1</td>
                                 <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt="">
                                 </td>
                                 <td>Đắc nhân tâm</td>
+                                <td>KNS-PTCN</td>
                                 <td>200.000đ</td>
-                                <td>29/7/2022 20:00</td>
-                                <td>29/7/2022 11:11 </td>
+                                <td>1000</td>
+                                <td>29/7/2023 11:11 </td>
                                 <td>
                                     <button id="suanguoidung">Sửa</button>
                                     <button onclick="myFunction()" id="xoanguoidung">Xóa</button>
@@ -143,17 +176,52 @@
                                             src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg">
                                         <input type="file" id="image1" accept="image/*" style="display: none;"
                                             onchange="previewProductImage(event)">
-                                        <button onclick="selectImage('image1', event)">Sửa</button>
-                                        <button onclick="deleteImage('productImage1', event)">Xóa</button>
+                                        <button class="edit-button" onclick="selectImage('image1', event)">Sửa</button>
+                                        <button class="delete-button"
+                                            onclick="deleteImage('productImage1', event)">Xóa</button>
                                     </div>
-                                    <!-- Các div khác tương tự cho ảnh 2 và 3 -->
+                                    <div class="form-group">
+                                        <label for="image2">Ảnh 2:</label>
+                                        <img id="productImage2"
+                                            src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 2.jpg">
+                                        <input type="file" id="image2" accept="image/*" style="display: none;"
+                                            onchange="previewProductImage(event)">
+                                        <button class="edit-button" onclick="selectImage('image2', event)">Sửa</button>
+                                        <button class="delete-button"
+                                            onclick="deleteImage('productImage2', event)">Xóa</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="image3">Ảnh 3:</label>
+                                        <img id="productImage3"
+                                            src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 3.jpg">
+                                        <input type="file" id="image3" accept="image/*" style="display: none;"
+                                            onchange="previewProductImage(event)">
+                                        <button class="edit-button" onclick="selectImage('image3', event)">Sửa</button>
+                                        <button class="delete-button"
+                                            onclick="deleteImage('productImage3', event)">Xóa</button>
+                                    </div>
                                     <div class="form-group">
                                         <label for="name">Tên sản phẩm:</label>
                                         <input type="text" id="name" value="Đắc Nhân Tâm">
                                     </div>
+
                                     <div class="form-group">
                                         <label for="email">Giá:</label>
-                                        <input type="text" id="email" value="200.000đ">
+                                        <input type="text" id="email" value="77.400 đ">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Tác giả:</label>
+                                        <input type="text" id="email" value="Dale Carnegie">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Nhà xuất bản:</label>
+                                        <input type="text" id="email" value="Văn Học">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Mô tả:</label>
+                                        <input type="text" id="name" value="Đắc nhân tâm của Dale Carnegie là quyển sách của mọi thời đại và một hiện tượng đáng kinh ngạc trong ngành xuất bản Hoa Kỳ. Chiếm vị trí số một trong danh mục sách bán chạy nhất và trở thành
+                                        một sự kiện có một không hai trong lịch sử ngành xuất bản thế giới và được đánh giá là một quyển sách có tầm ảnh hưởng nhất mọi
+                                        thời đại.">
                                     </div>
                                     <div class="form-group">
                                         <label for="quatyti">Số lượng tồn kho:</label>
@@ -178,13 +246,11 @@
 
                                 function selectImage(imageId, event) {
                                     event.stopPropagation();
-                                    // Thực hiện chỉnh sửa ảnh mà không ảnh hưởng đến việc ẩn box
                                     shouldDisplayBox = true;
                                 }
 
                                 function deleteImage(imageId, event) {
                                     event.stopPropagation();
-                                    // Thực hiện xóa ảnh mà không ảnh hưởng đến việc ẩn box
                                     shouldDisplayBox = true;
                                 }
 
@@ -225,55 +291,59 @@
                             </script>
 
                             <tr>
-                                <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/chiến tranh tiền tệ 1.jpg"
-                                        alt=""></td>
-                                <td>Chiến tranh tiền tệ</td>
-                                <td>2.000.000đ</td>
-                                <td>29/8/2022 23:45</td>
-                                <td>29/8/2022 12:34 </td>
-
-                                <td>
-                                    <button id="suanguoidung">Sửa</button>
-                                    <button id="xoanguoidung">Xóa</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Dám Bị Ghét 1.jpg" alt="">
-                                </td>
-                                <td>Dám bị ghét</td>
-                                <td>230.000đ</td>
-                                <td>29/7/2022 12:00</td>
-                                <td>29/7/2022 12:00 </td>
-
-                                <td>
-                                    <button id="suanguoidung">Sửa</button>
-                                    <button id="xoanguoidung">Xóa</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/nhung nguoi 1.jpg" alt="">
-                                </td>
-                                <td>Những người khốn khổ</td>
-                                <td>100.000đ</td>
-                                <td>4/2/2022 20:00</td>
-                                <td>4/2/2022 11:11 </td>
-
-                                <td>
-                                    <button id="suanguoidung">Sửa</button>
-                                    <button id="xoanguoidung">Xóa</button>
-                                </td>
-                            </tr>
-
-                            <tr>
+                                <td>1</td>
                                 <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt="">
                                 </td>
                                 <td>Đắc nhân tâm</td>
+                                <td>KNS-PTCN</td>
                                 <td>200.000đ</td>
-                                <td>29/7/2022 20:00</td>
-                                <td>29/7/2022 11:11 </td>
+                                <td>1000</td>
+                                <td>29/7/2023 11:11 </td>
+                                <td>
+                                    <button id="suanguoidung">Sửa</button>
+                                    <button id="xoanguoidung">Xóa</button>
+                                </td>
+                            </tr>
 
+                            <tr>
+                                <td>1</td>
+                                <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt="">
+                                </td>
+                                <td>Đắc nhân tâm</td>
+                                <td>KNS-PTCN</td>
+                                <td>200.000đ</td>
+                                <td>1000</td>
+                                <td>29/7/2023 11:11 </td>
+                                <td>
+                                    <button id="suanguoidung">Sửa</button>
+                                    <button id="xoanguoidung">Xóa</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt="">
+                                </td>
+                                <td>Đắc nhân tâm</td>
+                                <td>KNS-PTCN</td>
+                                <td>200.000đ</td>
+                                <td>1000</td>
+                                <td>29/7/2023 11:11 </td>
+                                <td>
+                                    <button id="suanguoidung">Sửa</button>
+                                    <button id="xoanguoidung">Xóa</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td><img src="/img/product/Kỹ năng sống - Phát triển cá nhân/Đắc Nhân Tâm 1.jpg" alt="">
+                                </td>
+                                <td>Đắc nhân tâm</td>
+                                <td>KNS-PTCN</td>
+                                <td>200.000đ</td>
+                                <td>1000</td>
+                                <td>29/7/2023 11:11 </td>
                                 <td>
                                     <button id="suanguoidung">Sửa</button>
                                     <button id="xoanguoidung">Xóa</button>
