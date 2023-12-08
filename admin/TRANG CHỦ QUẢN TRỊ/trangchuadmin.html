@@ -70,7 +70,7 @@
                 </div>
                 <div class="search">
                     <label>
-                        <input type="text" placeholder="Search here">
+                        <input type="text" placeholder="Tìm kiếm chức năng quản trị">
                         <ion-icon name="search-outline"></ion-icon>
                     </label>
                 </div>
@@ -121,7 +121,136 @@
                     </div>
                 </div>
             </div>
-
+            <div>
+                <input type="text" id="searchInput" placeholder="Tìm trong bảng dưới ">
+            </div>
+            
+            <div id="reportResult">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã SP</th>
+                            <th>SL nhập</th>
+                            <th>SL bán</th>
+                            <th>Tình trạng</th>
+                            <th>Doanh thu năm</th>
+                            <th>Lợi nhuận năm</th>
+                            <th>Ngày nhập hàng</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <thead id="total" style="font-size: 18px;">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th style="color: rgb(255, 0, 0); font-weight: lighter;">17.000.000.000đ</th>
+                            <th style="color: brown; font-weight: lighter;">39.000.000.000đ</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>KNS29</td>
+                            <td>1000</td>
+                            <td>700</td>
+                            <td id="basic">Còn hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MC01</td>
+                            <td>1000</td>
+                            <td>700</td>
+                            <td id="basic">Còn hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>NV86</td>
+                            <td>700</td>
+                            <td>700</td>
+                            <td id="premium">Hết hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>NV24</td>
+                            <td>700</td>
+                            <td>700</td>
+                            <td id="premium">Hết hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>NV63</td>
+                            <td>1000</td>
+                            <td>700</td>
+                            <td id="basic">Còn hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>KNS49</td>
+                            <td>700</td>
+                            <td>700</td>
+                            <td id="premium">Hết hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        
+                    </tbody>
+                    
+                </table>
+                <div class="pagination">
+                    <li class="hientai">1</li>
+                    <li>2</li></a>
+                    <li>3</li></a>
+                    <li>...</li></a>
+                    <li>NEXT</li></a>
+                </div>
+            </div>
+            
+            <script>
+                const searchInput = document.getElementById('searchInput');
+                const table = document.getElementById('reportResult').querySelector('table');
+                searchInput.addEventListener('keyup', function(event) {
+                    const searchText = event.target.value.toLowerCase();
+                    const rows = table.querySelectorAll('tbody tr');
+                    for (let row of rows) {
+                        const rowData = row.textContent.toLowerCase();
+                        if (rowData.includes(searchText)) {
+                            row.style.display = '';
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    }
+                });
+            </script>
+            
+            
             <!-- ================ Order Details List ================= -->
             <div class="details">
                 <div class="recentOrders">
@@ -135,7 +264,7 @@
                                 <td>MÃ ĐƠN HÀNG</td>
                                 <td>GIÁ</td>
                                 <td>THANH TOÁN</td>
-                                <td>TÌNH TRẠNG</td>
+                                <td>Còn hàng</td>
                             </tr>
                         </thead>
 

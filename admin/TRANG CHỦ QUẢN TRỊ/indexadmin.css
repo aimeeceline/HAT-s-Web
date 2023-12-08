@@ -347,5 +347,64 @@ a{
 .recentCustomers table tr:hover td h4 span {
   color: var(--white);
 }
+/* CSS cho ô tìm kiếm */
+#searchInput {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+/* CSS cho bảng */
+#reportResult table {
+  width: 95%;
+  margin-left: 20px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  
+}
+
+#reportResult th, #reportResult td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  text-align: center;
+}
+
+#reportResult thead:not(:nth-child(2)) {
+  background-color: #000000;
+  color: white;
+}
+
+.pagination {
+  text-align: center;
+  list-style: none;
+  font-weight: lighter;
+}
+
+.pagination li {
+  padding: 10px;
+  display: inline-block;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+
+.pagination .hientai {
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.pagination li:not(.hientai):hover {
+  background-color: rgb(143, 142, 142);
+  border-radius: 10px;
+}
+#basic {
+  color: green;
+}
+
+#premium {
+  color: red;
+}
 
 

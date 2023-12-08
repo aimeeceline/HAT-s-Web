@@ -72,7 +72,7 @@
                 </div>
                 <div class="search">
                     <label>
-                        <input type="text" placeholder="Search here">
+                        <input type="text" placeholder="Tìm kiếm chức năng quản trị">
                         <ion-icon name="search-outline"></ion-icon>
                     </label>
                 </div>
@@ -86,8 +86,8 @@
                     <div class="finder">
                         <!-- Dropdown -->
                         <select id="searchType" name="searchType" onchange="changeContent()">
-                            <option value="category">Tìm theo danh mục</option>
-                            <option value="publisher">Tìm theo nhà xuất bản</option>
+                            <option value="category">Lọc theo danh mục</option>
+                            <option value="publisher">Lọc theo nhà xuất bản</option>
                         </select>
 
                         <!-- Box cần thay đổi nội dung -->
@@ -201,6 +201,10 @@
                                         <button class="edit-button" onclick="selectImage('image3', event)">Sửa</button>
                                         <button class="delete-button"
                                             onclick="deleteImage('productImage3', event)">Xóa</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Mã sản phẩm:</label>
+                                        <input type="text" id="email" value="KNS49">
                                     </div>
                                     <div class="form-group">
                                         <label for="name">Tên sản phẩm:</label>
