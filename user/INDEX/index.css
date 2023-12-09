@@ -142,11 +142,13 @@ h2 {
   font-size: 18px;
 
 }
+#accordion>.cap1 {
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
 
-#accordion>.ct {
-  padding: 10px 5px;
 }
-
 #accordion>.ct>label {
   margin: 8px 0 8px 30px;
   font-size: 18px;
@@ -162,11 +164,12 @@ h2 {
 
 .apply-button {
   padding: 10px 20px;
+  margin-left: 90px;
   font-size: 16px;
   border: none;
   border-radius: 5px;
   background-color: #000000;
-
+  margin-top: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-align: right;
@@ -175,11 +178,13 @@ h2 {
 .apply-button a {
   color: white;
 }
-
+.apply-button a:hover {
+  color: rgb(0, 0, 0);
+}
 .apply-button:hover {
   background-color: #ffffff;
-  color: #000;
   border: 2px solid rgb(0, 0, 0);
+  
 }
 
 .onmainindex {
@@ -221,12 +226,12 @@ h2 {
 }
 
 .unmain p {
-  padding: 8px;
   text-align: center;
 
 }
 
 .unmain b {
+  
   color: red;
 }
 
@@ -446,4 +451,43 @@ footer span {
 footer a {
   padding: 0;
   text-decoration: none;
+}
+/* CSS để ẩn tooltip khi chưa hover */
+.tooltip {
+  display: none;
+  position: absolute;
+  margin-left: -70px;
+  margin-top: -5px;
+  background-color: #fff;
+  color: #000;
+  
+  border: 1px solid #000000;
+  border-radius: 5px;
+  z-index: 1;
+  
+}
+
+/* CSS để hiển thị tooltip khi hover vào phần tử cha */
+.buttons:hover .tooltip {
+  display: block;
+  /* Thay đổi các thuộc tính style để hiển thị tooltip theo ý bạn muốn */
+}
+/* Hiển thị tooltip khi di chuột vào */
+ .tooltip button {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  font-weight: bold;
+  color: #C92127;
+  background-color: none;
+  border: 2px solid #C92127;
+  border-radius: 7px;
+}
+
+/* Hiệu ứng hover cho các button */
+.tooltip button:hover {
+  background-color: #C92127;
+  color: white;
+  cursor: pointer;
 }
