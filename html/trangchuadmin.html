@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ quản trị</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="../css/indexadmin.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="logo">
+                            <img src="../img/banner/logooadmin.png">
+                        </span>
+                        <span class="title">HAT BOOKSTORE</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../html/trangchuadmin.html" id="active">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Bảng điều khiển</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../html/quanlydonhang.html">
+                        <span class="icon">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </span>
+                        <span class="title">Quản lý đơn hàng</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../html/quanlysanpham.html">
+                        <span class="icon">
+                          <ion-icon name="book-outline"></ion-icon>
+                        </span>
+                        <span class="title">Quản lý sản phẩm</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../html/quanlykhachhang.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Quản lý khách hàng</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="hello">
+                    <p>CHÀO MỪNG QUẢN TRỊ CỦA HAT !!!</p>
+                </div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Tìm kiếm chức năng quản trị">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+            </div>
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">3000</div>
+                        <div class="cardName">Lượt truy cập hôm nay</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">694</div>
+                        <div class="cardName">Đơn hàng tháng 12</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">284</div>
+                        <div class="cardName">Đánh giá mới</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">10.370.790đ</div>
+                        <div class="cardName">Lợi nhuận tháng 12</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="text" id="searchInput" placeholder="Tìm trong bảng dưới ">
+            </div>
+            
+            <div id="reportResult">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã SP</th>
+                            <th>SL nhập</th>
+                            <th>SL bán</th>
+                            <th>Tình trạng</th>
+                            <th>Doanh thu năm</th>
+                            <th>Lợi nhuận năm</th>
+                            <th>Ngày nhập hàng</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <thead id="total" style="font-size: 18px;">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th style="color: rgb(255, 0, 0); font-weight: lighter;">17.000.000.000đ</th>
+                            <th style="color: brown; font-weight: lighter;">39.000.000.000đ</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>KNS29</td>
+                            <td>1000</td>
+                            <td>700</td>
+                            <td id="basic">Còn hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MC01</td>
+                            <td>1000</td>
+                            <td>700</td>
+                            <td id="basic">Còn hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>NV86</td>
+                            <td>700</td>
+                            <td>700</td>
+                            <td id="premium">Hết hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>NV24</td>
+                            <td>700</td>
+                            <td>700</td>
+                            <td id="premium">Hết hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>NV63</td>
+                            <td>1000</td>
+                            <td>700</td>
+                            <td id="basic">Còn hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>KNS49</td>
+                            <td>700</td>
+                            <td>700</td>
+                            <td id="premium">Hết hàng</td>
+                            <td>300.000.000đ</td>
+                            <td>400.000.000đ</td>
+                            <td>29/11/2023</td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        
+                    </tbody>
+                    
+                </table>
+                <div class="pagination">
+                    <li class="hientai">1</li>
+                    <li>2</li></a>
+                    <li>3</li></a>
+                    <li>...</li></a>
+                    <li>NEXT</li></a>
+                </div>
+            </div>
+            
+            <script>
+                const searchInput = document.getElementById('searchInput');
+                const table = document.getElementById('reportResult').querySelector('table');
+                searchInput.addEventListener('keyup', function(event) {
+                    const searchText = event.target.value.toLowerCase();
+                    const rows = table.querySelectorAll('tbody tr');
+                    for (let row of rows) {
+                        const rowData = row.textContent.toLowerCase();
+                        if (rowData.includes(searchText)) {
+                            row.style.display = '';
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    }
+                });
+            </script>
+            
+            
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Đơn hàng gần đây</h2>
+                        <a href="../html/quanlydonhang.html" class="btn">Xem chi tiết</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>MÃ ĐƠN HÀNG</td>
+                                <td>GIÁ</td>
+                                <td>THANH TOÁN</td>
+                                <td>Còn hàng</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><a href="../html/chitietdonhang.html">ĐH 6248937</a></td>
+                                <td>170.070đ</td>
+                                <td>COD</td>
+                                <td><span class="status inProgress">Chờ xác nhận</span></td>
+                            </tr>
+
+                            <tr>
+                              <td><a href="../html/chitietdonhang.html">ĐH 7632148</a></td>
+                              <td>80.360đ</td>
+                              <td>BTP</td>
+                              <td><span class="status inProgress">Chờ xác nhận</span></td>
+                          </tr>
+
+                            <tr>
+                                <td><a href="../html/chitietdonhang.html">ĐH 9753814</a></td>
+                                <td>50.000đ</td>
+                                <td>COD</td>
+                                <td><span class="status pending">Đã lấy hàng</span></td>
+                            </tr>
+
+                            <tr>
+                              <td><a href="../html/chitietdonhang.html">ĐH 8553756</a></td>
+                              <td>96.900đ</td>
+                              <td>COD</td>
+                              <td><span class="status pending">Đã lấy hàng</span></td>
+                          </tr>
+
+                            <tr>
+                                <td><a href="../html/chitietdonhang.html">ĐH 4187256</a></td>
+                                <td>120.300đ</td>
+                                <td>COD</td>
+                                <td><span class="status return">Đã trả hàng</span></td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="../html/chitietdonhang.html">ĐH 8196437</a></td>
+                                <td>260.040đ</td>
+                                <td>BTP</td>
+                                <td><span class="status delivered">Đã giao</span></td>
+                            </tr>
+                            <tr>
+                              <td><a href="../html/chitietdonhang.html">ĐH 5379468</a></td>
+                              <td>120.000đ</td>
+                              <td>BTP</td>
+                              <td><span class="status delivered">Đã giao</span></td>
+                          </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ================= New Customers ================ -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Người dùng mới đăng ký</h2>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="../img/banner/avt1.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>aimeeceline00<br> <span>Bạc</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="../img/banner/avt2.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>thaihien99<br> <span>Bạc</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="../img/banner/avt3.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>vantuan00<br> <span>Bạc</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="../img/banner/avt4.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>myhuong7749<br> <span>Bạc</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="../img/banner/avt5.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>hoasenhong404<br> <span>Vàng</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"><img src="../img/banner/avt6.png" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>umboumbo11<br> <span>Vàng</span></h4>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
