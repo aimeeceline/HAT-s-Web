@@ -1,20 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Karla', sans-serif;
-}
 
-.container {
-  width: 100%;
-  height: auto;
-  background-size: cover;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-}
 
 nav {
   padding: 10px 0;
@@ -33,16 +17,17 @@ nav {
 }
 
 form {
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
-h4 {
-  margin: 10px -50px 20px  ;
-  margin-right: 0;
-  color: #bf0101;
-  font-weight: bold;
-  font-size: large;
-  
+.left h3,
+.right h3,
+.wrapper1 h3 {
+  margin: 10px;
+  margin-left: 0;
+  padding: 10px;
+  color: #fff;
+  background-color: #000;
 }
 
 form input[type="radio"] {
@@ -60,12 +45,13 @@ form input[type="text"] {
 
 }
 
-.wrapper1 {
-  width: 1200px;
+ a:hover{
+  color: rgb(50, 50, 154);
+  text-decoration: underline;
 }
 
 #num {
-  width: 20%;
+  width: 13%;
   text-align: center;
 }
 
@@ -89,45 +75,19 @@ form input[type="text"] {
 }
 
 .fixed-buttons-container {
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0.1px;
-  /* Điều chỉnh vị trí hiển thị của nút */
-  background: #fff;
-  /* Thay đổi màu nền tùy chọn */
-  z-index: 999;
-  /* Đảm bảo nó xuất hiện trước mọi thứ khác */
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
+  margin-top: 10px;
   transition: transform 0.3s ease-in-out;
-  /* Thêm hiệu ứng chuyển động */
-  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.fixed-buttons-container a {
-  color: #000;
-  text-decoration: none;
-}
-
-.fixed-buttons-container .back-to-cart,
-.fixed-buttons-container .checkout-button {
-  display: flex;
-  align-items: center;
-}
-
-.fixed-buttons-container .checkout-button {
-  margin-left: auto;
-  /* Dịch chuyển nút THANH TOÁN NGAY về phía bên phải */
 }
 
 label img {
-  width: 8%;
+  width: 2%;
 }
-
-#momo {
-  width: 6%;
+#zalopay{
+  width: 4%;
+}
+.checkout-btn:hover{
+  background-color: #C92127;
 }
