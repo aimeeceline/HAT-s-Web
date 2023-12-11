@@ -36,7 +36,8 @@
 }
 
 .boxsuauser {
-  height: 500px;
+  width: 800px;
+  height: 650px;
   display: none;
   position: fixed;
   top: 45%;
@@ -102,6 +103,15 @@
 .form-group:first-child {
   display: flex;
   align-items: center;
+}
+.form-group textarea
+{
+  margin-top: 5px;
+ font-size: 14px;
+ padding: 10px; /* Điều chỉnh padding để thêm khoảng trắng giữa văn bản và viền */
+ border: 1px solid #ccc; /* Thêm viền cho textarea */
+ border-radius: 5px; /* Tùy chọn: Thêm góc cong cho textarea */
+
 }
 
 .edit-button {
@@ -271,10 +281,11 @@
 .chartsBx .chart {
   position: relative;
   background: #fff;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 20px;
   width: 70%;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
   border: 1px solid var(--blue);
+  margin-left: 180px;
 }
