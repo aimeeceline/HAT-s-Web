@@ -185,7 +185,7 @@ p {
     text-align: right;
     padding: 25px;
 }
-table{
+.chitietsanpham table{
   margin-left: 20px;
 }
 .chitietsanpham table:first-child{
