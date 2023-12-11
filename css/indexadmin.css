@@ -407,4 +407,53 @@ a{
   color: red;
 }
 
+.filter{
+width: 90%;
+  padding: 20px;
+  align-items: center;
+  margin: 10px;
+  font-size: 16px;
+}
 
+.filter input[type='radio'] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.filter span{
+  margin-right: 20px;
+}
+.flex{
+  display: flex;
+}
+
+.filter input, select{
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  padding: 3px;
+}
+
+.filter select{
+  width: 193px;
+display: none;
+
+}
+
+.filter .date{
+  margin: 20px 0;
+}
+.thongke{
+  padding: 10px;
+  background-color: #000000;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+.thongke a{
+  color: #fff;
+}
+.thongke:hover{
+  background-color: #C92127;
+  border: 2px solid #C92127;
+}
