@@ -37,6 +37,7 @@
 
 .boxsuauser {
   height: 650px;
+  width: 730px;
   display: none;
   position: fixed;
   top: 45%;
@@ -44,13 +45,23 @@
   transform: translate(-50%, -50%);
   background: #ffffff;
   padding: 10px 10px 0px 10px;
-  border: 2px solid black;
+  border: 2px solid grey;
   margin-top: 50px;
   margin-left: 240px;
   z-index: 1;
   overflow: auto;
 }
+.boxsuauser button
+{
+  margin-left: 660px;
+  border: 2px solid grey;
+  font-size: larger;
+  border-radius: 100%;
+  width: 30px; /* Độ rộng của nút tròn */
+  height: 30px;
+  cursor: pointer;
 
+}
 .boxsuauser h2 {
   text-align: center;
   padding: 10px;
@@ -276,7 +287,7 @@ textarea {
   border: 1px solid var(--blue);
 }
 .change_img img{
-  width: 15%;
+  width:auto;
 }
 
 .change_img{
@@ -323,6 +334,7 @@ input[type="file"]{
   margin-left: 0;
 }
 .update a{
+  margin-left: 570px;
 	color: rgb(255, 255, 255);
 	border: 2px solid #333;
   background-color: #333;

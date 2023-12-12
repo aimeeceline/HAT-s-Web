@@ -169,8 +169,17 @@
 
                                 </td>
                             </tr>
+                           
                             <div class="boxsuauser" id="boxsuauser">
-                                <h2 style="margin-bottom: 10px;">Sửa thông tin sản phẩm Đắc Nhân Tâm</h2>
+                    
+                                     <button onclick="dongFormChinhSua()">X</button>
+                                     <script>
+                                        function dongFormChinhSua() {
+                                            var boxSuaUser = document.getElementById('boxsuauser');
+                                            boxSuaUser.style.display = 'none';
+                                        }
+                                    </script>
+                                <h2 style="margin-bottom: 10px;">Sửa thông tin sản phẩm </h2>
                                 <form id="suaUserForm">
                                     <div class="form-group">
                                         <label for="image1">Ảnh 1:</label>
@@ -252,7 +261,9 @@
                                         <div class="update">
                                             <a onclick="warning()"><i class="fa-solid fa-download"></i>Cập nhật</a>
                                         </div>
+                                      
                                     </div>
+                            
                                 </form>
                             </div>
 
