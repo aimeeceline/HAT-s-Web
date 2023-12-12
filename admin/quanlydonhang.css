@@ -1,0 +1,38 @@
+.user{
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  .user .user-table {
+    position: relative;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+  .user-table{
+    padding: 30px;
+  }
+  .user table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .user table thead td {
+    font-weight: 600;
+    background-color: black;
+    color: #fff;
+  }
+  .user .user-table table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(146, 100, 100, 0.1);
+    font-weight: lighter;
+  }
+  .user .user-table table tbody tr:hover {
+    background-color: #9c9595;
+    color: var(--white);
+  }
+  .user .user-table table tr td {
+    padding: 10px;
+    text-align: center;
+  }
