@@ -423,12 +423,14 @@ width: 90%;
 
 .filter span{
   margin-right: 20px;
+  
 }
 .flex{
   display: flex;
+  align-items: center;
 }
 
-.filter input, select{
+.filter input, .filter select{
   margin-right: 10px;
   margin-left: 10px;
   font-size: 16px;
@@ -436,7 +438,6 @@ width: 90%;
 }
 
 .filter select{
-  width: 193px;
 display: none;
 
 }

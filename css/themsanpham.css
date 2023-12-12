@@ -35,17 +35,16 @@ input[type="submit"] {
     padding: 10px 20px;
     margin-top: 10px;
     margin-left: 220px;
-    border: none;
+    border: 2px solid black;
     border-radius: 4px;
-    background-color: #34db60; /* Màu nền */
-    color: white;
     cursor: pointer;
     font-size: 16px;
 }
 .return:hover,
 input[type="submit"]:hover {
-    background-color: #2980b9; /* Màu hover */
-    color: black;
+    background-color:#C92127; /* Màu hover */
+    border: #C92127;
+    color: rgb(255, 255, 255);
 }
 .form-group input[type="file"] {
     padding: 6px;
@@ -54,10 +53,10 @@ input[type="submit"]:hover {
     margin-right: auto;
 }
 .return a{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .return a:hover{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 

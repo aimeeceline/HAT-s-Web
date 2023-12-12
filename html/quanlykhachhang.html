@@ -141,10 +141,10 @@
 
                     <select id="option">
                         <option>Tất cả</option>
-                        <option>Cơ bản</option>
-                        <option>Tiêu chuẩn</option>
-                        <option>Cao cấp</option>
-                        <option> <a href="#">Đã khóa</a></option>
+                        <option>Bạc</option>
+                        <option>Vàng</option>
+                        <option>Kim cương</option>
+                        <option>Đã khóa</option>
                     </select>
                     <select id="option">
                         <option>Mới nhất</option>
@@ -177,10 +177,70 @@
                                 <td>14/10/2023</td>
                                 <td>
                                     <button id="suanguoidung">Sửa</button>
-                                    
-                                    <button id="xoanguoidung">Khóa</button>
+                                    <button onclick="myFunction()" id="xoanguoidung">Khóa</button>
+                                    <script>
+                                        function myFunction() {
+                                            const confirmation = confirm("Bạn có chắc chắn muốn khóa người dùng aimeeceline00 ??? ");
+                                            if (confirmation) {
+                                                const reason = prompt("Nhập lý do khóa người dùng:");
+                                                if (reason !== null && reason !== "") {
+                                                    window.location.href = '../html/qlkhlockeduser.html';
+                                                }
+                                            }
+                                        }
+                                    </script>
                                 </td>
                             </tr>
+                            <div class="boxsuauser" id="boxsuauser">
+                                <h2>Sửa thông tin thaihien99</h2>
+                                <form action="#" method="post" id="suaUserForm">
+                                    <div class="form-group">
+                                        <label for="username">Tên đăng nhập:</label>
+                                        <input type="text" id="username" value="thaihien99">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Họ và tên:</label>
+                                        <input type="text" id="name" value="Trần Thái Hiễn">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="text" id="email" value="tranthaihien02@gmail.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="goi">Hạng thành viên:</label>
+                                        <select id="goi" name="goi">
+                                            <option>Bạc</option>
+                                            <option>Vàng</option>
+                                            <option>Kim cương</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Mật khẩu:</label>
+                                        <input type="password" id="password" value="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Cập nhật">
+                                    </div>
+                                </form>
+                            </div>
+        
+                            <script>
+                                const reuserBtn = document.getElementById('suanguoidung');
+                                const boxreuser = document.getElementById('boxsuauser');
+                                const reUserForm = document.getElementById('suaUserForm');                               
+                                reuserBtn.addEventListener('click', function () {                
+                                    if (boxreuser.style.display === 'none' || boxreuser.style.display === '') {
+                                        boxreuser.style.display = 'block';
+                                    } else {
+                                        boxreuser.style.display = 'none';
+                                    }
+                                });                
+                                reUserForm.addEventListener('submit', function (event) {
+                                    event.preventDefault();                
+                                    alert('Đã cập nhật thông tin');
+                                    boxreuser.style.display = 'none';
+                                });
+                            </script>
 
                             <tr>
                                 <td>2</td>
