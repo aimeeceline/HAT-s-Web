@@ -121,13 +121,14 @@
                         const boxadduser = document.getElementById('boxadduser');
                         const addUserForm = document.getElementById('addUserForm');
 
-                        adduserBtn.style.zIndex = '1000';
+                        
                         adduserBtn.addEventListener('click', function () {
 
                             if (boxadduser.style.display === 'none' || boxadduser.style.display === '') {
                                 boxadduser.style.display = 'block';
                                 document.querySelector('.overlay').classList.add('show-overlay');
         document.body.classList.add('no-scroll');
+        adduserBtn.style.zIndex = '1000';
                             } else {
                                 boxadduser.style.display = 'none';
                                 document.querySelector('.overlay').classList.remove('show-overlay');
@@ -200,6 +201,7 @@
                                 <div class="boxsuauser" id="boxsuauser">
                                     <button onclick="dongFormChinhSua()">X</button>
                                     <script>
+                                    
                                         function dongFormChinhSua() {
                                             var boxSuaUser = document.getElementById('boxsuauser');
                                             boxSuaUser.style.display = 'none';

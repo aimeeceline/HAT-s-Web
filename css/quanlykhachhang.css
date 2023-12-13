@@ -46,16 +46,17 @@
 }
 
 .boxadduser label{
-  display: block;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .boxadduser input[type="text"],
 .boxadduser input[type="email"],
-.boxadduser input[type="password"]
+.boxadduser input[type="password"],
+.boxadduser select
 {
   width: 100%;
-  padding: 5px;
+  padding: 8px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -79,8 +80,9 @@
 
 .boxadduser input[type="submit"]:hover
  {
-  background-color: #fffcfc;
-  color: #000000;
+  background-color: #C92127;
+  border: #C92127;
+  color: #ffffff;
 }
 #goi{
   padding: 5px;
