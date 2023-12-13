@@ -36,11 +36,11 @@
 }
 
 .boxsuauser {
-  height: 650px;
-  width: 730px;
+  height: 570px;
+  width: 530px;
   display: none;
   position: fixed;
-  top: 45%;
+  top: 40%;
   left: 40%;
   transform: translate(-50%, -50%);
   background: #ffffff;
@@ -48,12 +48,12 @@
   border: 2px solid grey;
   margin-top: 50px;
   margin-left: 240px;
-  z-index: 1;
+  z-index: 1001;
   overflow: auto;
 }
 .boxsuauser button
 {
-  margin-left: 660px;
+  margin-left: 450px;
   border: 2px solid grey;
   font-size: larger;
   border-radius: 100%;
@@ -90,7 +90,7 @@
 }
 textarea {
   width: 100%; 
-  height: 100px; 
+  height: 130px; 
   resize: vertical; 
   padding: 5px;
   border-radius: 5px;
@@ -331,10 +331,10 @@ input[type="file"]{
 }
 .update{
   margin: 30px;
-  margin-left: 0;
+  margin-left: auto;
 }
 .update a{
-  margin-left: 570px;
+
 	color: rgb(255, 255, 255);
 	border: 2px solid #333;
   background-color: #333;
@@ -350,4 +350,21 @@ input[type="file"]{
 	border: 1px solid #C92127;
 	background-color: #C92127;
   color: #fff;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999; 
+  display: none; 
+}
+
+.show-overlay {
+  display: block; 
+}
+.no-scroll {
+  overflow: hidden;
 }

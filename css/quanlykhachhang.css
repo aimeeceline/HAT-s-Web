@@ -32,42 +32,27 @@
   background: #ffffff;
   padding: 20px;
   border-radius: 5px;
-  z-index: 1;
+  z-index: 1000;
 }
-.boxsuauser{
-  display: none;
-  position: fixed;
-  width: 50%;
-  margin-top:50px;
-  margin-left: 240px;
-  background: #ffffff;
-  padding: 10px 10px 0px 10px;
-  border: 2px solid black;
-  border-radius: 10px;
-  z-index: 1;
-}
-.boxadduser h2,
-.boxsuauser h2 {
+
+.boxadduser h2
+{
   text-align: center;
 }
 
-.boxadduser .form-group, 
-.boxsuauser .form-group {
+.boxadduser .form-group
+{
   margin-bottom: 15px;
 }
 
-.boxadduser label, 
-.boxsuauser label {
+.boxadduser label{
   display: block;
   font-weight: bold;
 }
 
 .boxadduser input[type="text"],
 .boxadduser input[type="email"],
-.boxadduser input[type="password"],
-.boxsuauser input[type="text"],
-.boxsuauser input[type="email"],
-.boxsuauser input[type="password"]
+.boxadduser input[type="password"]
 {
   width: 100%;
   padding: 5px;
@@ -75,8 +60,7 @@
   border: 1px solid #ccc;
 }
 
-.boxadduser input[type="submit"],
-.boxsuauser input[type="submit"] 
+.boxadduser input[type="submit"]
  {
   width: 100px;
     height: 40px;
@@ -93,8 +77,7 @@
   
 }
 
-.boxadduser input[type="submit"]:hover,
-.boxsuauser input[type="submit"]:hover
+.boxadduser input[type="submit"]:hover
  {
   background-color: #fffcfc;
   color: #000000;

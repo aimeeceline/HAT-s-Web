@@ -1,15 +1,19 @@
-//js cua them anh
-let productPic = document.getElementById("product_pic");
-let inputFile = document.getElementById("input_file");
+const inputFiles = document.querySelectorAll('.input_file');
+const productPics = document.querySelectorAll('[id^="product_pic"]');
 
 const reuserBtn = document.getElementById('suanguoidung');
 const boxreuser = document.getElementById('boxsuauser');
 const reUserForm = document.getElementById('suaUserForm');
+
 reuserBtn.addEventListener('click', function () {
     if (boxreuser.style.display === 'none' || boxreuser.style.display === '') {
         boxreuser.style.display = 'block';
+        document.querySelector('.overlay').classList.add('show-overlay');
+        document.body.classList.add('no-scroll');
     } else {
         boxreuser.style.display = 'none';
+        document.querySelector('.overlay').classList.remove('show-overlay');
+        document.body.classList.remove('no-scroll');
     }
 });
 reUserForm.addEventListener('submit', function (event) {
@@ -17,33 +21,48 @@ reUserForm.addEventListener('submit', function (event) {
     alert('Đã cập nhật thông tin');
     boxreuser.style.display = 'none';
 });
+for (let i = 0; i < inputFiles.length; i++) {
+    inputFiles[i].addEventListener('change', function (event) {
+        const inputFile = event.target;
+        const productPic = productPics[i];
 
-inputFile.onchange = function () {
-    productPic.src = URL.createObjectURL(inputFile.files[0]);
-    var pic = document.getElementById("product_pic");
-    pic.style.display = "block";
+        if (inputFile.files && inputFile.files[0]) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                productPic.src = e.target.result;
+                productPic.style.display = "block";
+            }
+
+            reader.readAsDataURL(inputFile.files[0]);
+        }
+    });
 }
-
 function warning() {
-    // Lấy tất cả các phần tử <input> trừ phần tử đầu tiên
     alert("Bạn đã cập nhật thành công !");
     boxreuser.style.display = 'none';
+    setTimeout(function() {
+        document.querySelector('.overlay').classList.remove('show-overlay');
+        document.body.classList.remove('no-scroll');
+    }, 0);
 }
 
-//prevent refresh page
+
+
 var form = document.getElementById("formId");
 function submitForm(event) {
     event.preventDefault();
 }
 
-//calling a function during form submission
 form.addEventListener('submit', submitForm);
 
-// Updated function to handle deletion
 function del(element) {
-    var changeImgDiv = element.parentNode.parentNode; // Get the parent div of the clicked button
-    var pic = changeImgDiv.querySelector(".product_pic");
+    var changeImgDiv = element.parentNode.parentNode;
+    var pic = changeImgDiv.querySelector("img");
+    var input = changeImgDiv.querySelector(".input_file");
     var result = confirm("Bạn có chắc muốn xóa hình không ?");
-    if (result)
+    if (result) {
         pic.style.display = "none";
+        input.value = ""; // Xóa đường dẫn file trong input file
+    }
 }
