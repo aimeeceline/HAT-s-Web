@@ -98,10 +98,6 @@ textarea {
   margin-top: 5px;
 }
 
-.boxsuauser .form-group:first-child {
-  display: flex;
-  align-items: center;
-}
 .boxsuauser .form-group textarea
 {
   margin-top: 5px;

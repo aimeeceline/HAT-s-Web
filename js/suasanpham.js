@@ -1,21 +1,21 @@
 const inputFiles = document.querySelectorAll('.input_file');
 const productPics = document.querySelectorAll('[id^="product_pic"]');
-
+const reUserForm = document.getElementById('suaUserForm');
 const reuserBtn = document.getElementById('suanguoidung');
 const boxreuser = document.getElementById('boxsuauser');
-const reUserForm = document.getElementById('suaUserForm');
-
-reuserBtn.addEventListener('click', function () {
-    if (boxreuser.style.display === 'none' || boxreuser.style.display === '') {
-        boxreuser.style.display = 'block';
-        document.querySelector('.overlay').classList.add('show-overlay');
-        document.body.classList.add('no-scroll');
-    } else {
-        boxreuser.style.display = 'none';
+function hienBoxSuaUser() {
+    var boxSuaUser = document.getElementById('boxsuauser');
+    if (boxSuaUser.style.display === 'block') {
+        boxSuaUser.style.display = 'none';
         document.querySelector('.overlay').classList.remove('show-overlay');
         document.body.classList.remove('no-scroll');
+    } else {
+        boxSuaUser.style.display = 'block';
+        document.querySelector('.overlay').classList.add('show-overlay');
+        document.body.classList.add('no-scroll');
     }
-});
+}
+
 reUserForm.addEventListener('submit', function (event) {
     event.preventDefault();
     alert('Đã cập nhật thông tin');
@@ -41,7 +41,7 @@ for (let i = 0; i < inputFiles.length; i++) {
 function warning() {
     alert("Bạn đã cập nhật thành công !");
     boxreuser.style.display = 'none';
-    setTimeout(function() {
+    setTimeout(function () {
         document.querySelector('.overlay').classList.remove('show-overlay');
         document.body.classList.remove('no-scroll');
     }, 0);
@@ -62,6 +62,6 @@ function del(element) {
     var input = changeImgDiv.querySelector(".input_file");
     var result = confirm("Bạn có chắc muốn xóa hình không ?");
     if (result) {
-      alert("Xóa hình thành công!!!")
+        alert("Xóa hình thành công!!!")
     }
 }

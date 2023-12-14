@@ -187,9 +187,12 @@
                   </script>
                   <script>
                     function tra() {
-                      alert("BẠN CÓ CHẮC CHẮN MUỐN THU HỒI ĐƠN HÀNG ???");
+                        const confirmation = confirm("Bạn có chắc chắn muốn thu hồi đơn hàng này ??? ");
+                        if (confirmation) {
+                            alert("Lệnh thu hồi đơn hàng sẽ được thông báo đến đơn vị vận chuyển!!")
+                        }
                     }
-                  </script>
+                </script>
             </div>
         </div>
     </div>
