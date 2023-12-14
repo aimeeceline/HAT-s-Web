@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>CHÚ THUẬT HỒI CHIẾN</title>
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/chitietsanpham.css">
+  <link rel="stylesheet" href="../css/giohang.css">
+
 </head>
 
 <body>
@@ -50,7 +53,7 @@
         <a href="../html/giohang.html" class="cart">
           <img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXRJREFUSEvt1r9LVlEcx/GX4Kbg6iRSkG4m4pZRQ2OCm4Tg/9AgKE6Co+i/ENLgEgRBS5CUm4I4BWKSe+DSmsSR88jj7V7v90TwODxnO+d8zud9vz+4fAf0aA30iOtfwIOYxkz+6CMc43dJECXgpF3FCkYqkEtsYCcKLwHvYqnFeBuvI/Ao+BXeZsOLbP4l759hC2N5/wKf2uBR8Hc8QErpI/ysGI/iDEM4wNz/AD/MpslrHZsNpul8DVe5B37dBY9E/ARfs8lLfGgwnMf7fDeL1O2NKwJONfycHZ5jv8Etqrt+XgUP4yTXs61MJffnmMJN+qvg1BSdbi0xjmifdpXsr4i70/UGPzCO5ezcOasD1em6z26VqRpxXZ2itSt6e6/Bkfo1aRqzFYm4Dy7JQD/VN7/bfnNF/1LRBrv/zTWJb9FwCnUTOO28qRsE3mGh0LRNvofFblEdOJ2lMeZxzaDQBqjep/nrEB+rF5HRpxQW0vcM/AcLDWsfXKwkoAAAAABJRU5ErkJggg==" />
-          <span>&nbsp;1&nbsp;</span>
+          <span>&nbsp;0&nbsp;</span>
         </a>
       
     </nav>
@@ -85,6 +88,20 @@
           <span class="star">&#9734;</span>
           <span class="nbuy">(300)</span>
         </div>
+        <div id="buy-amount">
+          <button class="minus-btn" onclick="handleMinus()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+            </svg>
+          </button>
+          <input type="text" name="amount" id="amount" value="1">
+          <button class="plus-btn" onclick="handlePlus()"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+          </button>
+          </div>
         <div class="addtocart">
           <button onclick="myFunction()">Thêm vào giỏ hàng</button>
 
@@ -102,11 +119,12 @@
       <div class="onmainindex">
 
         <div class="on2main">
-          <div class="main"><a href="#"></a><img src="../img/product/Manga – Comic/conan 1.jpg" alt=""></a></div>
-          <div class="unmain">
+          <div class="main"><a href="../html/Chiến tranh tiền tệ.html"><img src="../img/product/Manga – Comic/conan 1.jpg" alt=""></a></div>
+          <a href="../html/Chiến tranh tiền tệ.html"><div class="unmain">
             <p>Thám tử lừng danh Conan</p>
             <p><b>26.000 đ</b></p>
           </div>
+        </a>
         </div>
 
         <div class="on2main">
@@ -119,21 +137,24 @@
         </div>
 
         <div class="on2main">
-          <div class="main"><a href="#"></a><img src="../img/product/Nghệ thuật – Văn hóa/giận 1.jpg" alt=""></a></div>
-          <div class="unmain">
+          <div class="main"><a href="../html/Chiến tranh tiền tệ.html"><img src="../img/product/Nghệ thuật – Văn hóa/giận 1.jpg" alt=""></a></div>
+          <a href="../html/Chiến tranh tiền tệ.html"><div class="unmain">
             <p>Giận</p>
             <p><b>90.000 đ</b></p>
           </div>
+          </a>
         </div>
 
         <div class="on2main">
-          <div class="main"><a href="#"></a><img
+          <div class="main"><a href="../html/Chiến tranh tiền tệ.html"><img
               src="../img/product/Nghệ thuật – Văn hóa/Kiếp Nào Ta Cũng Tìm Thấy Nhau 1.jpg" alt=""></div>
-          <div class="unmain">
+         <a href="../html/Chiến tranh tiền tệ.html"> <div class="unmain">
             <p>Kiếp Nào Ta Cũng Tìm Thấy Nhau</p>
             <p><b>89.000 đ</b></p>
           </div>
+        </a>
         </div>
+        
       </div>
     </div>
     <!-----------------------------------Bắt đầu Footer------------------------------------------->
