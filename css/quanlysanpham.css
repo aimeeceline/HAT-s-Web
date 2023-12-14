@@ -243,7 +243,7 @@ textarea {
   border-radius: 10px;
 }
 
-#xoanguoidung {
+.xoanguoidung {
   padding: 4px;
   background-color: red;
   color: white;
@@ -251,7 +251,7 @@ textarea {
   border-color: red;
 }
 
-#suanguoidung {
+.suanguoidung {
   padding: 4px;
   background-color: green;
   color: white;

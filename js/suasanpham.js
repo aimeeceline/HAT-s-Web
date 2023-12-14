@@ -62,7 +62,6 @@ function del(element) {
     var input = changeImgDiv.querySelector(".input_file");
     var result = confirm("Bạn có chắc muốn xóa hình không ?");
     if (result) {
-        pic.style.display = "none";
-        input.value = ""; // Xóa đường dẫn file trong input file
+      alert("Xóa hình thành công!!!")
     }
 }

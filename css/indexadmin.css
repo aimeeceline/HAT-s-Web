@@ -124,6 +124,7 @@ a{
 .search label {
   position: relative;
   width: 100%;
+  cursor: pointer;
 }
 
 .search label input {
