@@ -110,3 +110,36 @@ body {
   top: 30px;
   right: 20px;
 }
+#buy-amount{
+  margin-top: 10px;
+}
+#buy-amount #amount {
+  width: 20%;
+  text-align: center;
+  border: 1px solid #acaaaa;
+  cursor: pointer;
+}
+
+#buy-amount button:hover {
+  background-color: #ffffff;
+}
+
+#buy-amount button svg {
+  color: #909090;
+}
+
+#buy-amount button:hover svg {
+  color: #fa0000
+}
+
+#buy-amount {
+  display: flex;
+}
+
+#buy-amount button {
+  width: 35px;
+  height: 35px;
+  outline: none;
+  background: none;
+  border: 1px solid #909090;
+}
