@@ -6,7 +6,7 @@
 .banner {
   display: flex;
   background-color: black;
-  gap: 50px;
+  gap: 60px;
   padding: 10px;
   margin: 20px;
 }
